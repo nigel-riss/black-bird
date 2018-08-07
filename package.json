@@ -1,0 +1,37 @@
+{
+  "name": "black-bird",
+  "version": "1.0.0",
+  "description": "Site for \"Black Bird\" barbershop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigel-riss/black-bird.git"
+  },
+  "author": "Yuriy Kurenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigel-riss/black-bird/issues"
+  },
+  "homepage": "https://github.com/nigel-riss/black-bird#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-wait": "0.0.2",
+    "gulp-watch": "^5.0.1",
+    "sass-module-importer": "^1.4.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
