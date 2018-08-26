@@ -22,16 +22,24 @@ gulp.task('watch', () => {
 
     // styles
     gulp.watch('./src/sass/**/*.scss', ['cssInject']);
-    // watch('./src/sass/**/*.scss', () => {
-    //     gulp.start
-    // })
+
+    // scripts
+    gulp.watch('./src/js/**/*.js', ['jsChanged']);
 });
 
+// pug
 gulp.task('pugChanged', ['pugRender'], () => {
     browserSync.reload();
 });
 
+// styles
 gulp.task('cssInject', ['styles'], () => {
     gulp.src('./dist/styles.css')
         .pipe(browserSync.stream());
 });
+
+// scripts
+gulp.task('jsChanged', ['scripts'], () => {
+    browserSync.reload();
+});
+
