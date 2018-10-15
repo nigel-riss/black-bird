@@ -1,0 +1,27 @@
+.hero {
+    // box model
+    padding: 30px 25px;
+
+    // visual
+    background-color: black;
+}
+
+.hero__nav {
+    // visual
+    display: none;
+}
+
+.hero__content {
+    
+}
+
+.hero__logo {
+    // typography
+    text-align: center;
+
+    img {
+    // box model
+    width: 160px;
+    height: 160px;
+    }
+}

@@ -1,0 +1,23 @@
+.contacts {
+    // box model
+    margin-bottom: 15px;
+}
+
+.contacts__address {
+    // box model
+    margin: 0;
+    margin-bottom: 10px;
+
+    // typography
+    color: #fcfcfc;
+    font-size: 1rem;
+}
+
+.contacts__phone {
+    // box model
+    margin: 0;
+
+    // typography
+    color: #fefefe;
+    font-weight: bold;
+}

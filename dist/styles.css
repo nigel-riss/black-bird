@@ -297,6 +297,82 @@ template {
 [hidden] {
   display: none; }
 
+.hero {
+  padding: 30px 25px;
+  background-color: black; }
+
+.hero__nav {
+  display: none; }
+
+.hero__logo {
+  text-align: center; }
+  .hero__logo img {
+    width: 160px;
+    height: 160px; }
+
+.button__wrapper {
+  text-align: center; }
+
+.button {
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
+  color: #fefefe;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #e49b0e; }
+
+.contacts {
+  margin-bottom: 15px; }
+
+.contacts__address {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fcfcfc;
+  font-size: 1rem; }
+
+.contacts__phone {
+  margin: 0;
+  color: #fefefe;
+  font-weight: bold; }
+
+.franchise-name {
+  margin-bottom: 30px; }
+
+.franchise-name__header {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fefefe;
+  font-size: 5rem;
+  line-height: 65px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.franchise-name__subtitle {
+  margin: 0;
+  color: #e49b0e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 13px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.intro {
+  margin-left: -25px;
+  margin-bottom: 40px;
+  background-color: #e49b0e; }
+
+.intro__text {
+  margin: 0;
+  padding: 40px 160px 40px 25px;
+  color: #000000;
+  font-size: 1rem; }
+  .intro__text span {
+    display: block;
+    margin-top: 10px; }
+
 body {
   color: #ffffff;
   background-color: #131313; }
