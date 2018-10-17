@@ -1,0 +1,24 @@
+.intro {
+    // box model
+    margin-left: -25px;
+    margin-bottom: 40px;
+
+    // visual
+    background-color: #e49b0e;
+}
+
+.intro__text {
+    // box model
+    margin: 0;
+    padding: 40px 160px 40px 25px;
+
+    // typography
+    color: #000000;
+    font-size: 1rem;
+
+    span {
+        // box model
+        display: block;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,21 @@
+.button__wrapper {
+    // typography
+    text-align: center;
+}
+
+.button {
+    // box model
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+
+    // typography
+    color: #fefefe;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    // visual
+    background-color: #e49b0e;
+}

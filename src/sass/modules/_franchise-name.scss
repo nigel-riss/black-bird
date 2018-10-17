@@ -1,0 +1,30 @@
+.franchise-name {
+    // box model
+    margin-bottom: 30px;
+}
+
+.franchise-name__header {
+    // box model
+    margin: 0;
+    margin-bottom: 10px;
+
+    // typography
+    color: #fefefe;
+    font-size: 5rem;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.franchise-name__subtitle {
+    // box model
+    margin: 0;
+
+    // typography
+    color: #e49b0e;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
