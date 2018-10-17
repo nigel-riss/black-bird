@@ -32,73 +32,71 @@ html(lang="en")
                     p.intro__text Традиции британских барбершопов на современном уровне.<span>Для вас. В Минске.</span>
 
                 .hero__logo
-                    a(href="#")
-                        img(src="/img/BB_logo4blackback-cut.png", alt="")
+                    img(src="/img/BB_logo4blackback-cut.png", alt="")
 
-                .franchise-name
-                    h1.franchise-name__header Black<br>Bird
-                    p.franchise-name__subtitle Barbershop
-            //-temporary name
-            .button__wrapper
+                    .franchise-name
+                        h1.franchise-name__header Black<br>Bird
+                        p.franchise-name__subtitle Barbershop
+                        
+            .hero__cta
                 a.button(href="#") Записаться
 
         main
-            section.handout
-                .handout-item
+            section.featured
+                .feature-item
                     h2.handout-item__header Барбершоп из Туманного Альбиона
                     p.handout-item__text Место в котором царит атмосфера и дух классической британской мужской парикмахерской
 
-                .handout-item
+                .feature-item
                     h2.handout-item__header Команда профессионалов
-                    p.handout-item__text Опытные барберы под руководством шеф-мастера
-
-                .handout-item
+                    p.handout-item__text Опытные барберы под руководством шеф-мfeature
+                .feature-item
                     h2.handout-item__header Больше чем парикмахерская
                     p.handout-item__text Территория для общения полезных деловых знакомств и душевного отдыха
 
             section.about 
-                .about__image
+                .about__image 
                     img(src="#", alt="")
-                
-                .about__text
+
+                .about__content
+                    h2.about__title О нас
                     //- Уточнить формулировку
-                    h2.about__title Мы уверены, что стрижем мужчин и ровняем бороды лучше всех в Минске.
-                    p.about__explanation Black Bird Barbershop - это настоящий мужской клуб, где всегда открыты для дружелюбного общения. К нам приходят не только за качественной стрижкой, но и за атмосферой. Это не салон красоты в обычном понимании, где обслуживают представителей обоих полов, и не мужская парикмахерская, а своего рода клуб, где мужчины могут привести себя в порядок подальше от любопытных женских глаз, пообщаться с единомышленниками и просто выпить хороший виски или закурить сигару.
+                    p.about__subtitle Мы уверены, что стрижем мужчин и ровняем бороды лучше всех в Минске.
+                    p.about__text Black Bird Barbershop - это настоящий мужской клуб, где всегда открыты для дружелюбного общения. К нам приходят не только за качественной стрижкой, но и за атмосферой. Это не салон красоты в обычном понимании, где обслуживают представителей обоих полов, и не мужская парикмахерская, а своего рода клуб, где мужчины могут привести себя в порядок подальше от любопытных женских глаз, пообщаться с единомышленниками и просто выпить хороший виски или закурить сигару.
 
-            section.advantages
-                .advantages__header
-                    header.section-header
-                        h3.section-header__title Почему вам стоит выбрать именно нас?
-                        p.section-header__subtitle Всё просто...
+            section.benefits
+                .benefits__header
+                    h2.section-header__title Почему вам стоит выбрать именно нас?
+                    p.section-header__subtitle Всё просто...
 
-                .advantages__content
-                    article.advantages-item
+                .benefits__content
+                    article.benefits-item
+                        .benefits-item__logo
+                            img(src="#", alt="")
+
+                        .benefits-item__description
+                            p.benefits-item__text Опытные мастера и лучшее оборудование
+
+                    article.benefits-item
                         .advantages-item__logo
                             img(src="#", alt="")
 
-                        .advantages-item__description
-                            p.advantages-item__text Опытные мастера и лучшее оборудование
+                        .benefits-item__description
+                            p.benefits-item__text Удобное расположение и бесплатный паркинг
 
-                    article.advantages-item
-                        .advantages-item__logo
+                    article.benefits-item
+                        .benefits-item__logo
                             img(src="#", alt="")
 
-                        .advantages-item__description
-                            p.advantages-item__text Удобное расположение и бесплатный паркинг
+                        .benefits-item__description
+                            p.benefits-item__text Опытные мастера и лучшее оборудование
 
-                    article.advantages-item
-                        .advantages-item__logo
+                    article.benefits-item
+                        .benefits-item__logo
                             img(src="#", alt="")
 
-                        .advantages-item__description
-                            p.advantages-item__text Опытные мастера и лучшее оборудование
-
-                    article.advantages-item
-                        .advantages-item__logo
-                            img(src="#", alt="")
-
-                        .advantages-item__description
-                            p.advantages-item__text Удобное расположение и бесплатный паркинг
+                        .benefits-item__description
+                            p.benefits-item__text Удобное расположение и бесплатный паркинг
 
             section.price-list
                 .price-list__header
@@ -180,8 +178,9 @@ html(lang="en")
                             td.price-table__service Мужская стрижка
                             td.price-table__price 2000
                             td.price-table__description подбор стиля, мытьё головы, укладка
-
-                a.button(href="#") Записаться
+                            
+                price-list__cta
+                    a.button(href="#") Записаться
 
             section.team
                 .team__header
@@ -216,6 +215,9 @@ html(lang="en")
                             a.button(href="#") Записаться
 
             section.app-promo
+                .app-promo__img
+                    img(src="#", alt="")
+
                 .app-promo__cta
                     p.app-promo__text Установи наше бесплатное мобильное приложение и получи специальную скидку
 
@@ -223,7 +225,7 @@ html(lang="en")
                     a.app-button(href="#") <i class="icon--apple"></i> download on the <span>App Store</span>
                     a.app-button(href="#") <i class="icon--googleplay"></i> get it on <span>Google Play</span>
 
-            section.partners
+            article.partners
                 .partners__header
                     h2.partners__title Партнёры
 
@@ -239,32 +241,38 @@ html(lang="en")
 
             section.map
 
+            section.contacts
+                .contacts__content
+                    p.contacts__address Минск <br> пр-т Джержинского, 11
+                    p.contacts__phone +7 987 654 32 10
+                    p.contacts__time С 10:00 до 21:00 без перерывов и выходных
+
+                .contacts__logo
+                    img(src="#", alt="")
+
+                .contacts__social
+                    p.contacts__social-cta Присоединяйтесь к нам в социальных сетях. Узнавай новости первым, участвуй в специальных акциях нашего барбершопа.
+                    ul.social
+                        li.social__item
+                            a.social__icon.icon--instagram(href="#") Instagram
+                        li.social__item
+                            a.social__icon.icon--vk(href="#") ВКонтакте
 
         footer.footer
-            .footer__info
-                .footer__contacts
-                    .contacts
-                        p.contacts__address Минск <br> пр-т Джержинского, 11
-                        p.contacts__phone +7 987 654 32 10
+            .footer__nav
+                nav.main-nav
+                    ul.main-nav__list
+                        li.main-nav__item: a(href="#").main-nav__link О нас
+                        li.main-nav__item: a(href="#").main-nav__link Услуги
+                        li.main-nav__item: a(href="#").main-nav__link Прайс
+                        li.main-nav__item: a(href="#").main-nav__link Мастера
+            
+            .footer__logo
+                img(src="#", alt="")
 
-                .footer__openings
-                    p.footer__time С 10:00 до 21:00 без перерывов и выходных
-
-                .footer__logo
-                    a(href="#")
-                        img(src="#", alt="")
-
-                .footer__social
-                    p.footer__social-cta Присоединяйтесь к нам в социальных сетях. Узнавай новости первым, участвуй в специальных акциях нашего барбершопа.
-                    ul.social.social--golden
-                            li.social__item
-                                a.social__icon.icon--instagram(href="#") Instagram
-                            li.social__item
-                                a.social__icon.icon--vk(href="#") ВКонтакте
-
-                .footer__logo--raven
-                    a(href="#")
-                        img(src="#", alt="")
+                .franchise-name
+                    h1.franchise-name__header Black<br>Bird
+                    p.franchise-name__subtitle Barbershop
 
             .footer__bottom
                 .footer__header
@@ -272,11 +280,9 @@ html(lang="en")
                         h1.franchise-name__header Black Bird
                         p.franchise-name__subtitle Barbershop
 
-                .footer__copyrights
-                    p &copy; Black Bird Barbershop. All rights reserved.
-
-                .footer__policy
-                    a(href="#") Политика конфиденциальности
+            .footer__copyrights
+                p &copy; Black Bird Barbershop. All rights reserved.
+                a(href="#") Политика конфиденциальности
 
 
 
