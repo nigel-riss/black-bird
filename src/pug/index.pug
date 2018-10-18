@@ -28,76 +28,72 @@ html(lang="en")
                     .menu-button__middle
 
             .hero__content
-                .intro
-                    p.intro__text Традиции британских барбершопов на современном уровне.<span>Для вас. В Минске.</span>
+                p.hero__intro Традиции британских барбершопов на современном уровне.<span>Для вас. В Минске.</span>
 
                 .hero__logo
-                    img(src="/img/BB_logo4blackback-cut.png", alt="")
+                    .logo
+                        .logo__image
+                            img(src="/img/BB_logo4blackback-cut.png", alt="Black Bird barbershop logo")
 
-                    .franchise-name
-                        h1.franchise-name__header Black<br>Bird
-                        p.franchise-name__subtitle Barbershop
-                        
-            .hero__cta
-                a.button(href="#") Записаться
+                            h1.logo__title Black<br>Bird
+                            p.logo__subtitle Barbershop
+                .hero__cta
+                    a.button(href="#") Записаться
 
         main
             section.featured
-                .feature-item
-                    h2.handout-item__header Барбершоп из Туманного Альбиона
-                    p.handout-item__text Место в котором царит атмосфера и дух классической британской мужской парикмахерской
+                article.feature
+                    h2.feature__header Барбершоп из Туманного Альбиона
+                    p.feature__text Место в котором царит атмосфера и дух классической британской мужской парикмахерской
+                article.feature
+                    h2.feature__header Команда профессионалов
+                    p.feature__text Опытные барберы под руководством шеф-мfeature
+                article.feature
+                    h2.feature__header Больше чем парикмахерская
+                    p.feature__text Территория для общения полезных деловых знакомств и душевного отдыха
 
-                .feature-item
-                    h2.handout-item__header Команда профессионалов
-                    p.handout-item__text Опытные барберы под руководством шеф-мfeature
-                .feature-item
-                    h2.handout-item__header Больше чем парикмахерская
-                    p.handout-item__text Территория для общения полезных деловых знакомств и душевного отдыха
-
-            section.about 
-                .about__image 
-                    img(src="#", alt="")
+            section.about
+                .about__image
+                    img(src="#", alt="Интерьер барбершопа Black Bird в Минске")
 
                 .about__content
                     h2.about__title О нас
-                    //- Уточнить формулировку
                     p.about__subtitle Мы уверены, что стрижем мужчин и ровняем бороды лучше всех в Минске.
-                    p.about__text Black Bird Barbershop - это настоящий мужской клуб, где всегда открыты для дружелюбного общения. К нам приходят не только за качественной стрижкой, но и за атмосферой. Это не салон красоты в обычном понимании, где обслуживают представителей обоих полов, и не мужская парикмахерская, а своего рода клуб, где мужчины могут привести себя в порядок подальше от любопытных женских глаз, пообщаться с единомышленниками и просто выпить хороший виски или закурить сигару.
+                    .about__text
+                        p Black Bird Barbershop - это настоящий мужской клуб, где всегда открыты для дружелюбного общения. К нам приходят не только за качественной стрижкой, но и за атмосферой.
+                        p Это не салон красоты в обычном понимании, где обслуживают представителей обоих полов, и не мужская парикмахерская, а своего рода клуб, где мужчины могут привести себя в порядок подальше от любопытных женских глаз, пообщаться с единомышленниками и просто выпить хороший виски или закурить сигару.
 
             section.benefits
                 .benefits__header
-                    h2.section-header__title Почему вам стоит выбрать именно нас?
-                    p.section-header__subtitle Всё просто...
+                    h2.benefits__title Почему вам стоит выбрать именно нас?
+                    p.benefits__subtitle Всё просто...
 
                 .benefits__content
-                    article.benefits-item
-                        .benefits-item__logo
-                            img(src="#", alt="")
+                    article.benefit
+                        .benefit__logo
+                            img(src="#", alt="Качество")
+                        .benefit__description
+                            p.benefit__text Опытные мастера и лучшее оборудование
 
-                        .benefits-item__description
-                            p.benefits-item__text Опытные мастера и лучшее оборудование
-
-                    article.benefits-item
+                    article.benefit
                         .advantages-item__logo
+                            img(src="#", alt="Парковка")
+                        .benefit__description
+                            p.benefit__text Удобное расположение и бесплатный паркинг
+
+                    article.benefit
+                        .benefit__logo
                             img(src="#", alt="")
+                        .benefit__description
+                            p.benefit__text Опытные мастера и лучшее оборудование
 
-                        .benefits-item__description
-                            p.benefits-item__text Удобное расположение и бесплатный паркинг
-
-                    article.benefits-item
-                        .benefits-item__logo
+                    article.benefit
+                        .benefit__logo
                             img(src="#", alt="")
+                        .benefit__description
+                            p.benefit__text Удобное расположение и бесплатный паркинг
 
-                        .benefits-item__description
-                            p.benefits-item__text Опытные мастера и лучшее оборудование
-
-                    article.benefits-item
-                        .benefits-item__logo
-                            img(src="#", alt="")
-
-                        .benefits-item__description
-                            p.benefits-item__text Удобное расположение и бесплатный паркинг
-
+            //- Check later
             section.price-list
                 .price-list__header
                     h2.price-list__title Прайс-лист
@@ -190,53 +186,50 @@ html(lang="en")
                     article.member
                         .member__photo
                             img(src="#", alt="")
-
                         .member__header
                             h3.member__name Даниил
-                            p.member__about Барбер нового поколения, черпающий вдохновение из &#171;старой школы&#187; Главные принципы: чёткость и дерзость.
+                            p.member__about Барбер нового поколения, черпающий вдохновение из «старой школы» Главные принципы: чёткость и дерзость.
                             a.button(href="#") Записаться
 
                     article.member
                         .member__photo
                             img(src="#", alt="")
-
                         .member__header
                             h3.member__name Раф
-                            p.member__about Барбер нового поколения, черпающий вдохновение из &#171;старой школы&#187; Главные принципы: чёткость и дерзость.
+                            p.member__about Барбер нового поколения, черпающий вдохновение из «старой школы» Главные принципы: чёткость и дерзость.
                             a.button(href="#") Записаться
 
                     article.member
                         .member__photo
                             img(src="#", alt="")
-
                         .member__header
                             h3.member__name Валера
-                            p.member__about Барбер нового поколения, черпающий вдохновение из &#171;старой школы&#187; Главные принципы: чёткость и дерзость.
+                            p.member__about Барбер нового поколения, черпающий вдохновение из «старой школы» Главные принципы: чёткость и дерзость.
                             a.button(href="#") Записаться
 
             section.app-promo
                 .app-promo__img
-                    img(src="#", alt="")
+                    img(src="#", alt="Мобильное приложение Black Bird")
 
-                .app-promo__cta
-                    p.app-promo__text Установи наше бесплатное мобильное приложение и получи специальную скидку
-
-                .app-promo__buttons
-                    a.app-button(href="#") <i class="icon--apple"></i> download on the <span>App Store</span>
-                    a.app-button(href="#") <i class="icon--googleplay"></i> get it on <span>Google Play</span>
+                .app-promo__content
+                    .app-promo__cta
+                        p.app-promo__text Установи наше бесплатное мобильное приложение и получи специальную скидку
+                    .app-promo__buttons
+                        a.app-button(href="#") <i class="icon--apple"></i> download on the <span>App Store</span>
+                        a.app-button(href="#") <i class="icon--googleplay"></i> get it on <span>Google Play</span>
 
             article.partners
                 .partners__header
                     h2.partners__title Партнёры
 
                 .partners__content
-                    .partner-item
+                    article.partner
                         img(src="#", alt="")
 
-                    .partner-item
+                    article.partner
                         img(src="#", alt="")
 
-                    .partner-item
+                    article.partner
                         img(src="#", alt="")
 
             section.map
@@ -244,7 +237,7 @@ html(lang="en")
             section.contacts
                 .contacts__content
                     p.contacts__address Минск <br> пр-т Джержинского, 11
-                    p.contacts__phone +7 987 654 32 10
+                    a.contacts__phone(href="tel:+79876543210") +7 987 654-32-10
                     p.contacts__time С 10:00 до 21:00 без перерывов и выходных
 
                 .contacts__logo
@@ -268,28 +261,12 @@ html(lang="en")
                         li.main-nav__item: a(href="#").main-nav__link Мастера
             
             .footer__logo
-                img(src="#", alt="")
+                .logo
+                    h.logo__title Black<br>Bird
+                    p.logo__subtitle Barbershop
 
-                .franchise-name
-                    h1.franchise-name__header Black<br>Bird
-                    p.franchise-name__subtitle Barbershop
-
-            .footer__bottom
-                .footer__header
-                    .franchise-name
-                        h1.franchise-name__header Black Bird
-                        p.franchise-name__subtitle Barbershop
-
-            .footer__copyrights
-                p &copy; Black Bird Barbershop. All rights reserved.
-                a(href="#") Политика конфиденциальности
-
-
-
-
-
-
-
-
+            .footer__legals
+                p.footer__copyrights © Black Bird Barbershop. All rights reserved.
+                a.footer__policy(href="#") Политика конфиденциальности
 
         script(src="main.js")
