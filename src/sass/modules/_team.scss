@@ -1,0 +1,24 @@
+.team {
+    // box model
+    padding: 40px 25px;
+
+    // visual
+    background-color: #e49b0e;
+}
+
+.team__header {
+
+}
+
+.team__title {
+    // box model
+    margin: 0;
+
+    // typography
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}

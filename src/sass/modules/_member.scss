@@ -1,0 +1,46 @@
+.member {
+    // box model
+    padding: 20px;
+
+    // visual
+    background-color: #fff;
+}
+
+.member__photo {
+    img {
+    // box model
+    width: 100%;
+    height: 100%;
+
+    // visual
+    object-fit: cover;
+    }
+}
+
+.member__header {
+    // typography
+    text-align: center;
+}
+
+.member__name {
+    // box model
+    margin: 0;
+    margin-bottom: 20px;
+
+    // typography
+    color: #808080;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.member__about {
+    // box model
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 180px;
+
+    // typography
+    color: #000;
+    font-size: 1rem;
+}

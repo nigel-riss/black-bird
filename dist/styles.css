@@ -454,13 +454,17 @@ template {
   color: #fff;
   font-size: 1.2rem; }
 
-.benefit {
-  display: inline-block;
-  margin-bottom: 40px;
+.benefits__content {
+  margin: 0 auto;
+  width: 220px;
   text-align: center; }
 
+.benefit {
+  margin-bottom: 40px; }
+
 .benefit__logo {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  text-align: center; }
   .benefit__logo img {
     width: 135px;
     height: 135px; }
@@ -472,6 +476,73 @@ template {
   font-size: 1rem;
   font-weight: 600;
   text-align: center; }
+
+.price-list {
+  padding: 40px 25px;
+  background-color: #000; }
+
+.price-list__header {
+  margin-bottom: 35px; }
+
+.price-list__title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.price-list__cta {
+  text-align: center; }
+
+.price-table {
+  margin-bottom: 40px; }
+
+.price-table__caption {
+  margin-bottom: 15px;
+  color: #e49b0e;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.team {
+  padding: 40px 25px;
+  background-color: #e49b0e; }
+
+.team__title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.member {
+  padding: 20px;
+  background-color: #fff; }
+
+.member__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.member__header {
+  text-align: center; }
+
+.member__name {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #808080;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center; }
+
+.member__about {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 180px;
+  color: #000;
+  font-size: 1rem; }
 
 body {
   color: #ffffff;

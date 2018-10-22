@@ -39,5 +39,10 @@
 }
 
 .benefits__content {
+    // box model
+    margin: 0 auto;
+    width: 220px;
     
+    // typography
+    text-align: center;
 }

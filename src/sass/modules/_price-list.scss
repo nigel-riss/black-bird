@@ -1,0 +1,28 @@
+.price-list {
+    // box model
+    padding: 40px 25px;
+
+    // visual
+    background-color: #000;
+}
+
+.price-list__header {
+    // box model
+    margin-bottom: 35px;
+}
+
+.price-list__title {
+    // box model
+    margin: 0;
+
+    // typography
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price-list__cta {
+    // typography
+    text-align: center;
+}
