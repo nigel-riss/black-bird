@@ -304,11 +304,45 @@ template {
 .hero__nav {
   display: none; }
 
+.hero__intro {
+  margin-left: -25px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 70px;
+  padding-top: 40px;
+  max-width: 345px;
+  background-color: #e49b0e;
+  color: #000;
+  font-size: 1rem; }
+  .hero__intro span {
+    display: block;
+    margin-top: 10px; }
+
 .hero__logo {
+  margin-bottom: 30px;
   text-align: center; }
   .hero__logo img {
     width: 160px;
     height: 160px; }
+
+.logo__title {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fefefe;
+  font-size: 5rem;
+  line-height: 65px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.logo__subtitle {
+  margin: 0;
+  color: #e49b0e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 13px;
+  text-align: center;
+  text-transform: uppercase; }
 
 .hero__cta {
   text-align: center; }
@@ -338,40 +372,26 @@ template {
   color: #fefefe;
   font-weight: bold; }
 
-.franchise-name {
-  margin-bottom: 30px; }
-
-.franchise-name__header {
-  margin: 0;
-  margin-bottom: 10px;
-  color: #fefefe;
-  font-size: 5rem;
-  line-height: 65px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.franchise-name__subtitle {
-  margin: 0;
-  color: #e49b0e;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 13px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.intro {
-  margin-left: -25px;
-  margin-bottom: 40px;
+.featured {
+  padding: 50px 50px;
   background-color: #e49b0e; }
 
-.intro__text {
+.feature__header {
   margin: 0;
-  padding: 40px 160px 40px 25px;
-  color: #000000;
-  font-size: 1rem; }
-  .intro__text span {
-    display: block;
-    margin-top: 10px; }
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center; }
+
+.feature__text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 20px;
+  text-align: center; }
 
 body {
   color: #ffffff;

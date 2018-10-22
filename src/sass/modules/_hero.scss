@@ -15,7 +15,34 @@
     
 }
 
+.hero__intro {
+    // box model
+    margin-left: -25px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 70px;
+    padding-top: 40px;
+    max-width: 345px;
+
+    // visual
+    background-color: #e49b0e;
+
+    // typography
+    color: #000;
+    font-size: 1rem;
+
+    span {
+        // box model
+        display: block;
+        margin-top: 10px;
+    }
+}
+
 .hero__logo {
+    // box model
+    margin-bottom: 30px;
+    
     // typography
     text-align: center;
 
@@ -24,6 +51,32 @@
     width: 160px;
     height: 160px;
     }
+}
+
+.logo__title {
+    // box model
+    margin: 0;
+    margin-bottom: 10px;
+
+    // typography
+    color: #fefefe;
+    font-size: 5rem;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo__subtitle {
+    // box model
+    margin: 0;
+
+    // typography
+    color: #e49b0e;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 13px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .hero__cta {
