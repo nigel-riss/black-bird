@@ -1,0 +1,32 @@
+.featured {
+    // box model
+    padding: 50px 50px;
+
+    // visual
+    background-color: #e49b0e;
+}
+
+.feature__header {
+    // box model
+    margin: 0;
+    margin-bottom: 15px;
+
+    // typography
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.feature__text {
+    // box model
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+    // typography
+    color: #fff;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+}

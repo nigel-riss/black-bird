@@ -304,11 +304,45 @@ template {
 .hero__nav {
   display: none; }
 
+.hero__intro {
+  margin-left: -25px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 70px;
+  padding-top: 40px;
+  max-width: 345px;
+  background-color: #e49b0e;
+  color: #000;
+  font-size: 1rem; }
+  .hero__intro span {
+    display: block;
+    margin-top: 10px; }
+
 .hero__logo {
+  margin-bottom: 30px;
   text-align: center; }
   .hero__logo img {
     width: 160px;
     height: 160px; }
+
+.logo__title {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fefefe;
+  font-size: 5rem;
+  line-height: 65px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.logo__subtitle {
+  margin: 0;
+  color: #e49b0e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 13px;
+  text-align: center;
+  text-transform: uppercase; }
 
 .hero__cta {
   text-align: center; }
@@ -338,40 +372,177 @@ template {
   color: #fefefe;
   font-weight: bold; }
 
-.franchise-name {
-  margin-bottom: 30px; }
-
-.franchise-name__header {
-  margin: 0;
-  margin-bottom: 10px;
-  color: #fefefe;
-  font-size: 5rem;
-  line-height: 65px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.franchise-name__subtitle {
-  margin: 0;
-  color: #e49b0e;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 13px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.intro {
-  margin-left: -25px;
-  margin-bottom: 40px;
+.featured {
+  padding: 50px 50px;
   background-color: #e49b0e; }
 
-.intro__text {
+.feature__header {
   margin: 0;
-  padding: 40px 160px 40px 25px;
-  color: #000000;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center; }
+
+.feature__text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 20px;
+  text-align: center; }
+
+.about {
+  background-color: #000; }
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px; }
+  .about__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.about__content {
+  padding-left: 25px;
+  padding-right: 35px; }
+
+.about__title {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  position: absolute;
+  clip: rect(0 0 0 0); }
+
+.about__subtitle {
+  margin: 0;
+  margin-bottom: 35px;
+  color: #e49b0e;
+  font-size: 1.5rem;
+  line-height: 30px; }
+
+.about__text p {
+  margin: 0;
+  padding-bottom: 40px;
+  color: #cfcfcf;
+  font-size: 1rem;
+  line-height: 20px; }
+
+.benefits {
+  padding: 40px 25px;
+  background-color: #fff; }
+
+.benefits__header {
+  margin-bottom: 35px;
+  margin-right: -25px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 70px;
+  padding-top: 20px;
+  background-color: #e49b0e; }
+
+.benefits__title {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 1.2rem; }
+
+.benefits__subtitle {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem; }
+
+.benefits__content {
+  margin: 0 auto;
+  width: 220px;
+  text-align: center; }
+
+.benefit {
+  margin-bottom: 40px; }
+
+.benefit__logo {
+  margin-bottom: 15px;
+  text-align: center; }
+  .benefit__logo img {
+    width: 135px;
+    height: 135px; }
+
+.benefit__text {
+  margin: 0;
+  padding: 0 25px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center; }
+
+.price-list {
+  padding: 40px 25px;
+  background-color: #000; }
+
+.price-list__header {
+  margin-bottom: 35px; }
+
+.price-list__title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.price-list__cta {
+  text-align: center; }
+
+.price-table {
+  margin-bottom: 40px; }
+
+.price-table__caption {
+  margin-bottom: 15px;
+  color: #e49b0e;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.team {
+  padding: 40px 25px;
+  background-color: #e49b0e; }
+
+.team__title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.member {
+  padding: 20px;
+  background-color: #fff; }
+
+.member__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.member__header {
+  text-align: center; }
+
+.member__name {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #808080;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center; }
+
+.member__about {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 180px;
+  color: #000;
   font-size: 1rem; }
-  .intro__text span {
-    display: block;
-    margin-top: 10px; }
 
 body {
   color: #ffffff;
