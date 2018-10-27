@@ -1,0 +1,55 @@
+.app-promo {
+    // box model
+    display: flex;
+    align-items: flex-end;
+    padding: 0 25px;
+    padding-top: 25px;
+
+    // visual
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.app-promo__img {
+    // box model
+    height: 345px;
+    margin-bottom: -40px;
+    margin-right: 20px;
+
+    // visual
+    z-index: 1;
+
+    img {
+        // box model
+        height: 100%;
+    }
+}
+
+.app-promo__content {
+
+}
+
+.app-promo__cta {
+
+}
+
+.app-promo__text {
+    // box model
+    margin: 0;
+
+    // typography
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.app-promo__buttons {
+    // positioning
+
+    // box model
+    width: 100%;
+
+    // visual
+    background-color: #e49b0e;
+    z-index: 2;
+}
