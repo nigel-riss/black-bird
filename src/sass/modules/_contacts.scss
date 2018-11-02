@@ -9,7 +9,7 @@
     margin-bottom: 10px;
 
     // typography
-    color: #fcfcfc;
+    color: $light;
     font-size: 1rem;
 }
 
@@ -18,8 +18,11 @@
     margin: 0;
 
     // typography
-    color: #fefefe;
+    color: $light;
     font-weight: bold;
+    
+    // visual
+    text-decoration: none;
 }
 
 .contacts__time {

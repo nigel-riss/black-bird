@@ -3,7 +3,7 @@
     padding: 40px 25px;
 
     // visual
-    background-color: #fff;
+    background-color: $light;
 }
 
 .benefits__header {
@@ -16,7 +16,7 @@
     padding-top: 20px;
 
     // visual
-    background-color: #e49b0e;
+    background-color: $gamboge;
 }
 
 .benefits__title {
@@ -25,7 +25,7 @@
     margin-bottom: 25px;
 
     // typography
-    color: #000;
+    color: $black;
     font-size: 1.2rem;
 }
 
@@ -34,7 +34,7 @@
     margin: 0;
 
     // typography
-    color: #fff;
+    color: $light;
     font-size: 1.2rem;
 }
 

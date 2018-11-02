@@ -1,6 +1,6 @@
 .about {
     // visual
-    background-color: #000;
+    background-color: $black;
 }
 
 .about__image {
@@ -8,15 +8,15 @@
     width: 100%;
     height: 100%;
     margin-bottom: 40px;
+}
 
-    img {
-        // box model
-        width: 100%;
-        height: 100%;
+.about__image img {
+    // box model
+    width: 100%;
+    height: 100%;
 
-        // visual
-        object-fit: cover;
-    }
+    // visual
+    object-fit: cover;
 }
 
 .about__content {
@@ -42,7 +42,7 @@
     margin-bottom: 35px;
 
     // typography
-    color: #e49b0e;
+    color: $gamboge;
     font-size: 1.5rem;
     line-height: 30px;
 }
@@ -54,7 +54,7 @@
     padding-bottom: 40px;
 
     // typography
-    color: #cfcfcf;
+    color: $light;
     font-size: 1rem;
     line-height: 20px;
     }

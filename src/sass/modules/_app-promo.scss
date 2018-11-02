@@ -6,7 +6,7 @@
     padding-top: 25px;
 
     // visual
-    background-color: #fff;
+    background-color: $light;
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@
     margin: 0;
 
     // typography
-    color: #000;
+    color: $black;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -50,6 +50,6 @@
     width: 100%;
 
     // visual
-    background-color: #e49b0e;
+    background-color: $gamboge;
     z-index: 2;
 }

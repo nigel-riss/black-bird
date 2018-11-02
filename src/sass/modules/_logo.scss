@@ -1,0 +1,25 @@
+.logo__title {
+    // box model
+    margin: 0;
+    margin-bottom: 10px;
+
+    // typography
+    color: $light;
+    font-size: 5rem;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+    // box model
+    display: block;
+
+    // typography
+    color: $gamboge;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+}
