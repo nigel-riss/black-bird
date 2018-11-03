@@ -421,25 +421,38 @@ html, body {
   text-transform: uppercase; }
 
 .featured {
-  padding: 50px 50px;
+  padding: 50px;
+  padding-bottom: 5px;
   background-color: #e49b0e; }
 
-.feature__header {
+.featured__header {
+  display: none; }
+
+.feature {
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-image: url(./img/deco/hr-white.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 120px; }
+  .feature:last-of-type {
+    background-image: none; }
+
+.feature__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0.5em;
   color: #000000;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center; }
+  font-family: "Marta", Times, serif;
+  font-size: 1.125rem;
+  font-weight: 700; }
 
 .feature__text {
   margin: 0;
-  margin-bottom: 20px;
-  padding: 0 20px;
   color: #ffffff;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 1rem;
-  line-height: 20px;
-  text-align: center; }
+  line-height: 20px; }
 
 .about {
   background-color: #000000; }

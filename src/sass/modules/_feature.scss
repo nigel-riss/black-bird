@@ -1,3 +1,44 @@
 .feature {
-    
+    // box model
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+
+    // typography
+    text-align: center;
+
+    // visual
+    background-image: url(./img/deco/hr-white.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 120px;
+
+    &:last-of-type {
+        // visual
+        background-image: none;
+    }
+}
+
+.feature__title {
+    // box model
+    margin: 0;
+    margin-bottom: 0.5em;
+
+    // typography
+    color: $black;
+    font-family: $displayFont;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+
+
+.feature__text {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $light;
+    font-family: $textFont;
+    font-size: 1rem;
+    line-height: 20px;
 }
