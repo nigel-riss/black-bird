@@ -1,25 +1,44 @@
+.logo {
+
+}
+
+.logo__image {
+
+}
+
+.logo__image img {
+    // box model
+    height: 100%;
+    width: 100%;
+}
+
 .logo__title {
     // box model
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 10px;
+    width: 260px;
+    border: 1px solid red;
 
     // typography
     color: $light;
-    font-size: 5rem;
-    line-height: 65px;
+    font-family: $displayFont;
+    font-size: 3.25rem;
+    // line-height: 65px;
     text-align: center;
     text-transform: uppercase;
 
-    span {
+}
+
+.logo__title em {
     // box model
     display: block;
 
     // typography
     color: $gamboge;
-    font-size: 1.2rem;
+    font-family: $textFont;
+    font-size: 1.25rem;
     font-weight: bold;
-    letter-spacing: 13px;
-    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.35em;
     text-transform: uppercase;
-    }
 }

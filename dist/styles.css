@@ -363,11 +363,7 @@ html, body {
   font-weight: 700; }
 
 .hero__logo {
-  margin-bottom: 30px;
-  text-align: center; }
-  .hero__logo img {
-    width: 160px;
-    height: 160px; }
+  margin-bottom: 30px; }
 
 .hero__cta {
   text-align: center; }
@@ -399,22 +395,30 @@ html, body {
   font-weight: bold;
   text-decoration: none; }
 
+.logo__image img {
+  height: 100%;
+  width: 100%; }
+
 .logo__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 10px;
+  width: 260px;
+  border: 1px solid red;
   color: #ffffff;
-  font-size: 5rem;
-  line-height: 65px;
+  font-family: "Marta", Times, serif;
+  font-size: 3.25rem;
   text-align: center;
   text-transform: uppercase; }
-  .logo__title span {
-    display: block;
-    color: #e49b0e;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 13px;
-    text-align: center;
-    text-transform: uppercase; }
+
+.logo__title em {
+  display: block;
+  color: #e49b0e;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.35em;
+  text-transform: uppercase; }
 
 .featured {
   padding: 50px 50px;
