@@ -8,12 +8,14 @@
 
 .benefits__header {
     // box model
-    margin-bottom: 35px;
+    padding: 15px 60px;
     margin-right: -25px;
-    padding-bottom: 20px;
-    padding-left: 60px;
-    padding-right: 70px;
-    padding-top: 20px;
+
+    // margin-bottom: 35px;
+    // padding-bottom: 20px;
+    // padding-left: 60px;
+    // padding-right: 70px;
+    // padding-top: 20px;
 
     // visual
     background-color: $gamboge;
@@ -22,11 +24,14 @@
 .benefits__title {
     // box model
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 0.75em;
 
     // typography
     color: $black;
-    font-size: 1.2rem;
+    font-family: $displayFont;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .benefits__subtitle {
@@ -35,7 +40,10 @@
 
     // typography
     color: $light;
-    font-size: 1.2rem;
+    font-family: $displayFont;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.25rem;
 }
 
 .benefits__content {
