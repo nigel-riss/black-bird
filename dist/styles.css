@@ -313,6 +313,30 @@ html, body {
 *::after {
   box-sizing: inherit; }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-Bold.woff2") format("woff2"), url("./fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-Regular.woff2") format("woff2"), url("./fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Marta';
+  src: url("./fonts/Marta-Bold.woff2") format("woff2"), url("./fonts/Marta-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Marta';
+  src: url("./fonts/Marta.woff2") format("woff2"), url("./fonts/Marta.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .hero {
   padding: 30px;
   background-color: #000000; }
@@ -352,13 +376,14 @@ html, body {
   background-color: #e49b0e; }
 
 .contacts {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1rem; }
 
 .contacts__address {
   margin: 0;
-  margin-bottom: 10px;
-  color: #ffffff;
-  font-size: 1rem; }
+  margin-bottom: 10px; }
 
 .contacts__phone {
   margin: 0;
