@@ -7,7 +7,6 @@
     // box model
     width: 100%;
     height: 100%;
-    margin-bottom: 40px;
 }
 
 .about__image img {
@@ -21,11 +20,11 @@
 
 .about__content {
     // box model
-    padding-left: 25px;
-    padding-right: 35px;
+    padding: 40px 25px;
 }
 
 .about__title {
+    // hiding from view but not form robots
     // box model
     width: 1px;
     height: 1px;
@@ -43,19 +42,19 @@
 
     // typography
     color: $gamboge;
+    font-family: $displayFont;
     font-size: 1.5rem;
-    line-height: 30px;
+    line-height: 1.5;
 }
 
 .about__text {
-    p {
-    // box model
-    margin: 0;
-    padding-bottom: 40px;
 
+}
+
+p {
     // typography
     color: $light;
+    font-family: $textFont;
     font-size: 1rem;
-    line-height: 20px;
-    }
+    line-height: 1.75;
 }
