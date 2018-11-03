@@ -28,7 +28,9 @@
 
     // typography
     color: $dark;
-    font-size: 1rem;
+    font-family: $displayFont;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .hero__logo {

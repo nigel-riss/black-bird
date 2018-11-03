@@ -327,6 +327,12 @@ html, body {
 
 @font-face {
   font-family: 'Marta';
+  src: url("./fonts/Marta-Italic.woff2") format("woff2"), url("./fonts/Marta-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Marta';
   src: url("./fonts/Marta-Bold.woff2") format("woff2"), url("./fonts/Marta-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
@@ -352,7 +358,9 @@ html, body {
   max-width: 345px;
   background-color: #e49b0e;
   color: #131313;
-  font-size: 1rem; }
+  font-family: "Marta", Times, serif;
+  font-size: 1.25rem;
+  font-weight: 700; }
 
 .hero__logo {
   margin-bottom: 30px;

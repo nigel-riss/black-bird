@@ -16,6 +16,14 @@
 
 @font-face {
     font-family: 'Marta';
+    src: url('./fonts/Marta-Italic.woff2') format('woff2'),
+        url('./fonts/Marta-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marta';
     src: url('./fonts/Marta-Bold.woff2') format('woff2'),
         url('./fonts/Marta-Bold.woff') format('woff');
     font-weight: bold;
