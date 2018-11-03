@@ -298,26 +298,21 @@ template {
   display: none; }
 
 .hero {
-  padding: 30px 25px;
-  background-color: black; }
+  padding: 30px;
+  background-color: #000000; }
 
 .hero__nav {
   display: none; }
 
 .hero__intro {
-  margin-left: -25px;
+  margin-left: -30px;
   margin-bottom: 40px;
-  padding-bottom: 40px;
-  padding-left: 25px;
+  padding: 30px;
   padding-right: 70px;
-  padding-top: 40px;
   max-width: 345px;
   background-color: #e49b0e;
-  color: #000;
+  color: #131313;
   font-size: 1rem; }
-  .hero__intro span {
-    display: block;
-    margin-top: 10px; }
 
 .hero__logo {
   margin-bottom: 30px;
@@ -326,24 +321,6 @@ template {
     width: 160px;
     height: 160px; }
 
-.logo__title {
-  margin: 0;
-  margin-bottom: 10px;
-  color: #fefefe;
-  font-size: 5rem;
-  line-height: 65px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.logo__subtitle {
-  margin: 0;
-  color: #e49b0e;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 13px;
-  text-align: center;
-  text-transform: uppercase; }
-
 .hero__cta {
   text-align: center; }
 
@@ -351,7 +328,7 @@ template {
   display: inline-block;
   width: 200px;
   margin: 0 auto;
-  color: #fefefe;
+  color: #ffffff;
   line-height: 36px;
   text-align: center;
   text-decoration: none;
@@ -364,13 +341,31 @@ template {
 .contacts__address {
   margin: 0;
   margin-bottom: 10px;
-  color: #fcfcfc;
+  color: #ffffff;
   font-size: 1rem; }
 
 .contacts__phone {
   margin: 0;
-  color: #fefefe;
-  font-weight: bold; }
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none; }
+
+.logo__title {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 5rem;
+  line-height: 65px;
+  text-align: center;
+  text-transform: uppercase; }
+  .logo__title span {
+    display: block;
+    color: #e49b0e;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 13px;
+    text-align: center;
+    text-transform: uppercase; }
 
 .featured {
   padding: 50px 50px;
@@ -379,7 +374,7 @@ template {
 .feature__header {
   margin: 0;
   margin-bottom: 15px;
-  color: #000;
+  color: #000000;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center; }
@@ -388,22 +383,23 @@ template {
   margin: 0;
   margin-bottom: 20px;
   padding: 0 20px;
-  color: #fff;
+  color: #ffffff;
   font-size: 1rem;
   line-height: 20px;
   text-align: center; }
 
 .about {
-  background-color: #000; }
+  background-color: #000000; }
 
 .about__image {
   width: 100%;
   height: 100%;
   margin-bottom: 40px; }
-  .about__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+
+.about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .about__content {
   padding-left: 25px;
@@ -426,13 +422,13 @@ template {
 .about__text p {
   margin: 0;
   padding-bottom: 40px;
-  color: #cfcfcf;
+  color: #ffffff;
   font-size: 1rem;
   line-height: 20px; }
 
 .benefits {
   padding: 40px 25px;
-  background-color: #fff; }
+  background-color: #ffffff; }
 
 .benefits__header {
   margin-bottom: 35px;
@@ -446,12 +442,12 @@ template {
 .benefits__title {
   margin: 0;
   margin-bottom: 25px;
-  color: #000;
+  color: #000000;
   font-size: 1.2rem; }
 
 .benefits__subtitle {
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.2rem; }
 
 .benefits__content {
@@ -472,21 +468,21 @@ template {
 .benefit__text {
   margin: 0;
   padding: 0 25px;
-  color: #000;
+  color: #000000;
   font-size: 1rem;
   font-weight: 600;
   text-align: center; }
 
 .price-list {
   padding: 40px 25px;
-  background-color: #000; }
+  background-color: #000000; }
 
 .price-list__header {
   margin-bottom: 35px; }
 
 .price-list__title {
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.3rem;
   text-align: center;
   text-transform: uppercase; }
@@ -510,7 +506,7 @@ template {
 
 .team__title {
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 3px;
@@ -520,7 +516,7 @@ template {
 .member {
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #fff; }
+  background-color: #ffffff; }
 
 .member__photo img {
   width: 100%;
@@ -542,7 +538,7 @@ template {
   margin: 0 auto;
   margin-bottom: 20px;
   width: 180px;
-  color: #000;
+  color: #000000;
   font-size: 1rem; }
 
 .app-promo {
@@ -550,7 +546,7 @@ template {
   align-items: flex-end;
   padding: 0 25px;
   padding-top: 25px;
-  background-color: #fff;
+  background-color: #ffffff;
   overflow: hidden; }
 
 .app-promo__img {
@@ -563,7 +559,7 @@ template {
 
 .app-promo__text {
   margin: 0;
-  color: #000;
+  color: #000000;
   font-size: 1.2rem;
   font-weight: 600; }
 
@@ -574,6 +570,24 @@ template {
 
 .app-button {
   display: block; }
+
+.partners {
+  padding: 40px 25px;
+  background-color: #ffffff; }
+
+.partners__header {
+  margin-bottom: 40px; }
+
+.partners__title {
+  margin: 0;
+  color: #131313;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center; }
+
+.partners__content {
+  display: flex;
+  justify-content: space-between; }
 
 body {
   color: #ffffff;

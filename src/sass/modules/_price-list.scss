@@ -3,7 +3,7 @@
     padding: 40px 25px;
 
     // visual
-    background-color: #000;
+    background-color: $black;
 }
 
 .price-list__header {
@@ -16,7 +16,7 @@
     margin: 0;
 
     // typography
-    color: #fff;
+    color: $light;
     font-size: 1.3rem;
     text-align: center;
     text-transform: uppercase;
