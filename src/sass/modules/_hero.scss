@@ -13,10 +13,10 @@
     @include atTablet {
         // visual
         background-color: $black;
-        background-image: url('./img/hero-bg.jpg'), url('./img/deco/orange-bottom-wave.svg');
-        background-repeat: no-repeat,repeat-x;
-        background-position: bottom left, bottom center;
-        background-size: cover, 40px;
+        background-image:  url('./img/deco/orange-bottom-wave.svg'), url('./img/hero-bg.jpg');
+        background-repeat: repeat-x, no-repeat;
+        background-position: bottom center, bottom left -80px;
+        background-size: 80px, cover;
     }
 }
 
@@ -26,7 +26,8 @@
 }
 
 .hero__content {
-    
+    // box model
+    width: 305px;
 }
 
 .hero__intro {
@@ -50,7 +51,16 @@
     font-size: 1rem;
     font-style: italic;
     line-height: 1.25;
-    // font-weight: 400;
+    
+    @include atTablet {
+        // box model
+        margin-bottom: 40px;
+        padding: 30px;
+        padding-right: 70px;
+        
+        // typography
+        font-size: 1.25rem;
+    }
 }
 
 .hero__intro em {
@@ -59,6 +69,11 @@
 
     // typography
     text-align: right;
+
+    @include atTablet {
+        // box model
+        padding-top: 1em;
+    }
 }
 
 .hero__logo {

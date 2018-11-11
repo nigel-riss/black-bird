@@ -7,6 +7,11 @@
     margin: 0 auto;
     margin-bottom: 10px;
     width: 120px;
+
+    @include atTablet {
+        // box model
+        width: 160px;
+    }
 }
 
 .logo__image img {
@@ -29,6 +34,11 @@
     text-align: center;
     text-transform: uppercase;
 
+    @include atTablet {
+        // typography
+        font-size: 3rem;
+        line-height: 1;
+    }
 }
 
 .logo__title em {
