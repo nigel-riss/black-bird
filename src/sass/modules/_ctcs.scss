@@ -1,10 +1,14 @@
 .ctcs {
+    // box model
+    padding: 40px 25px;
+
     // visual
     background-color: $light;
 }
 
 .ctcs__header {
-
+    // box model
+    display: none;
 }
 
 .ctcs__title {
@@ -12,23 +16,63 @@
 }
 
 .ctcs__content {
-
+    // typography
+    text-align: center;
 }
 
 .ctcs__address {
+    // box model
+    margin: 0;
+    margin-bottom: 0.25em;
 
+    // typography
+    color: $dark;
+    font-family: $textFont;
+    font-size: 1.25rem;
+    line-height: 1.25;
 }
 
 .ctcs__phone {
+    // box model
+    display: block;
+    margin: 0;
+    padding-bottom: 40px;
 
+    // typography
+    color: $gamboge;
+    font-family: $textFont;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    
+    // visual
+    background-image: url('./img/deco/hr-orange.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 12px center;
+    background-size: 200px;
 }
 
 .ctcs__time {
+    // box model
+    margin: 0;
 
+    // typography
+    color: $dark;
+    font-family: $displayFont;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.125;
 }
 
 .ctcs__logo {
+    // box model
+    margin: 10px auto;
+    width: 200px;
+}
 
+.ctcs__logo img {
+    // box model
+    width: 100%;
 }
 
 .ctcs__social {
@@ -36,5 +80,15 @@
 }
 
 .ctcs__social-cta {
+    // box model
+    margin: 0 auto;
+    width: 280px;
 
+    // typography
+    color: $dark;
+    font-family: $displayFont;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.125;
+    text-align: center;
 }

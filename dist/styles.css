@@ -452,7 +452,7 @@ html, body {
   margin-bottom: 20px;
   padding-bottom: 25px;
   text-align: center;
-  background-image: url(./img/deco/hr-white.svg);
+  background-image: url("./img/deco/hr-white.svg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 120px; }
@@ -751,8 +751,79 @@ p {
   display: flex;
   justify-content: space-between; }
 
+.map {
+  position: relative;
+  height: 400px; }
+  .map::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 20px;
+    width: 100%;
+    background-image: url("./img/deco/white-bottom-wave.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 40px; }
+
 .ctcs {
+  padding: 40px 25px;
   background-color: #ffffff; }
+
+.ctcs__header {
+  display: none; }
+
+.ctcs__content {
+  text-align: center; }
+
+.ctcs__address {
+  margin: 0;
+  margin-bottom: 0.25em;
+  color: #131313;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.25; }
+
+.ctcs__phone {
+  display: block;
+  margin: 0;
+  padding-bottom: 40px;
+  color: #e49b0e;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-image: url("./img/deco/hr-orange.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 12px center;
+  background-size: 200px; }
+
+.ctcs__time {
+  margin: 0;
+  color: #131313;
+  font-family: "Marta", Times, serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.125; }
+
+.ctcs__logo {
+  margin: 10px auto;
+  width: 200px; }
+
+.ctcs__logo img {
+  width: 100%; }
+
+.ctcs__social-cta {
+  margin: 0 auto;
+  width: 280px;
+  color: #131313;
+  font-family: "Marta", Times, serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.125;
+  text-align: center; }
 
 body {
   color: #ffffff;

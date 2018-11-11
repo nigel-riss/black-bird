@@ -1,3 +1,28 @@
 .map {
+    // positioning
+    position: relative;
     
+    // box model
+    height: 400px;
+
+    &::after {
+        content: '';
+
+        // positioning
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        // box model
+        height: 20px;
+        width: 100%;
+
+        // visual
+        background-image: url('./img/deco/white-bottom-wave.svg');
+        background-repeat: repeat-x;
+        background-position: bottom center;
+        background-size: 40px;
+    }
 }
