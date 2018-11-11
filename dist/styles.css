@@ -383,11 +383,16 @@ html, body {
   width: 200px;
   margin: 0 auto;
   color: #ffffff;
-  line-height: 36px;
+  font-family: "Marta", Times, serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 50px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #e49b0e; }
+  background-color: #e49b0e;
+  border-radius: 10px; }
 
 .contacts {
   margin-bottom: 15px;

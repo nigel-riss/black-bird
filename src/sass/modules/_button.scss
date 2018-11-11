@@ -6,11 +6,16 @@
 
     // typography
     color: $light;
-    line-height: 36px;
+    font-family: $displayFont;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 50px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
     // visual
     background-color: $gamboge;
+    border-radius: 10px;
 }
