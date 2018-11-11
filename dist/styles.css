@@ -346,7 +346,11 @@ html, body {
 .hero {
   padding: 30px;
   padding-bottom: 60px;
-  background-color: #000000; }
+  background-color: #000000;
+  background-image: url("./img/deco/orange-bottom-wave.svg");
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: 60px; }
 
 .hero__nav {
   display: none; }
@@ -462,7 +466,7 @@ html, body {
   margin: 0;
   color: #ffffff;
   font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 20px; }
 
 .about {

@@ -5,6 +5,10 @@
 
     // visual
     background-color: $black;
+    background-image: url('./img/deco/orange-bottom-wave.svg');
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 60px;
 }
 
 .hero__nav {
