@@ -7,7 +7,6 @@
     font-family: $textFont;
     font-size: 1rem;
 
-
     &--hero {
 
     }
@@ -16,7 +15,9 @@
 .contacts__address {
     // box model
     margin: 0;
-    margin-bottom: 10px;
+
+    // typography
+    line-height: 1.125;
 }
 
 .contacts__phone {
@@ -26,6 +27,7 @@
     // typography
     color: $light; 
     font-weight: bold;
+    line-height: 1.75;
     
     // visual
     text-decoration: none;
