@@ -24,6 +24,24 @@
         background-position: top center;
         background-size: 40px;
     }
+
+    &::after {
+        content: '';
+
+        // positioning
+        position: absolute;
+        bottom: -8px;
+
+        // box model
+        height: 40px;
+        width: 100%;
+
+        // visual
+        background-image: url('./img/deco/white-bottom-flower.svg');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+    }
 }
 
 .about__image {

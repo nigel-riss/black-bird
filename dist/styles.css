@@ -484,6 +484,16 @@ html, body {
     background-repeat: repeat-x;
     background-position: top center;
     background-size: 40px; }
+  .about::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    height: 40px;
+    width: 100%;
+    background-image: url("./img/deco/white-bottom-flower.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain; }
 
 .about__image {
   width: 100%;
@@ -519,10 +529,10 @@ p {
   line-height: 1.75; }
 
 .benefits {
-  padding: 20px 25px;
-  padding-top: 50px;
+  padding: 50px 25px;
+  padding-bottom: 1px;
   background-color: #ffffff;
-  background-image: url("./img/deco/info-top-deco.svg");
+  background-image: url("./img/deco/info-bottom-deco.svg");
   background-position: top -20px center;
   background-repeat: repeat-x;
   background-size: 100px; }
@@ -579,7 +589,12 @@ p {
 
 .price-list {
   padding: 40px 25px;
-  background-color: #000000; }
+  padding-top: 60px;
+  background-color: #000000;
+  background-image: url("./img/deco/white-top-flower.svg"), url("./img/deco/info-top-deco.svg");
+  background-repeat: no-repeat, repeat-x;
+  background-size: 120px, 100px;
+  background-position: top 5px center, top center; }
 
 .price-list__header {
   margin-bottom: 35px; }
@@ -603,6 +618,9 @@ p {
   font-size: 1.2rem;
   text-align: center;
   text-transform: uppercase; }
+
+.price-table__description {
+  column-span: 2; }
 
 .team {
   padding: 40px 25px;

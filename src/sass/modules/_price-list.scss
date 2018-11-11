@@ -1,9 +1,14 @@
 .price-list {
     // box model
     padding: 40px 25px;
+    padding-top: 60px;
 
     // visual
     background-color: $black;
+    background-image: url('./img/deco/white-top-flower.svg'), url('./img/deco/info-top-deco.svg');
+    background-repeat: no-repeat, repeat-x;
+    background-size: 120px, 100px;
+    background-position: top 5px center, top center;
 }
 
 .price-list__header {

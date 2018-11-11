@@ -1,15 +1,14 @@
 .benefits {
     // box model
-    padding: 20px 25px;
-    padding-top: 50px;
+    padding: 50px 25px;
+    padding-bottom: 1px;
 
     // visual
     background-color: $light;
-    background-image: url('./img/deco/info-top-deco.svg');
+    background-image: url('./img/deco/info-bottom-deco.svg');
     background-position: top -20px center;
     background-repeat: repeat-x;
     background-size: 100px;
-    // background-size: contain;
 }
 
 .benefits__header {
