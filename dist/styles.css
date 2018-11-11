@@ -351,6 +351,13 @@ html, body {
   background-repeat: repeat-x;
   background-position: bottom center;
   background-size: 40px; }
+  @media (min-width: 700px) {
+    .hero {
+      background-color: #000000;
+      background-image: url("./img/hero-bg.jpg"), url("./img/deco/orange-bottom-wave.svg");
+      background-repeat: no-repeat,repeat-x;
+      background-position: bottom left, bottom center;
+      background-size: cover, 40px; } }
 
 .hero__nav {
   display: none; }

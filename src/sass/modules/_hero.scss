@@ -9,6 +9,15 @@
     background-repeat: repeat-x;
     background-position: bottom center;
     background-size: 40px;
+
+    @include atTablet {
+        // visual
+        background-color: $black;
+        background-image: url('./img/hero-bg.jpg'), url('./img/deco/orange-bottom-wave.svg');
+        background-repeat: no-repeat,repeat-x;
+        background-position: bottom left, bottom center;
+        background-size: cover, 40px;
+    }
 }
 
 .hero__nav {
