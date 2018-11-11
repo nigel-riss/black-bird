@@ -8,7 +8,7 @@
     background-image: url('./img/deco/orange-bottom-wave.svg');
     background-repeat: repeat-x;
     background-position: bottom center;
-    background-size: 60px;
+    background-size: 40px;
 }
 
 .hero__nav {
@@ -32,8 +32,8 @@
     background-color: $gamboge;
     background-image: url('./img/deco/black-side-wave.svg'), url('./img/deco/black-side-flower.svg');
     background-repeat: repeat-y, no-repeat;
-    background-size: 10px, 70px;
-    background-position: right center, right center;
+    background-size: 6px, 70px;
+    background-position: center right, center right;
 
     // typography
     color: $dark;

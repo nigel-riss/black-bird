@@ -350,7 +350,7 @@ html, body {
   background-image: url("./img/deco/orange-bottom-wave.svg");
   background-repeat: repeat-x;
   background-position: bottom center;
-  background-size: 60px; }
+  background-size: 40px; }
 
 .hero__nav {
   display: none; }
@@ -364,8 +364,8 @@ html, body {
   background-color: #e49b0e;
   background-image: url("./img/deco/black-side-wave.svg"), url("./img/deco/black-side-flower.svg");
   background-repeat: repeat-y, no-repeat;
-  background-size: 10px, 70px;
-  background-position: right center, right center;
+  background-size: 6px, 70px;
+  background-position: center right, center right;
   color: #131313;
   font-family: "Marta", Times, serif;
   font-size: 1.125rem;
@@ -470,7 +470,20 @@ html, body {
   line-height: 20px; }
 
 .about {
+  position: relative;
   background-color: #000000; }
+  .about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 100%;
+    background-image: url("./img/deco/orange-top-wave.svg");
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: 40px; }
 
 .about__image {
   width: 100%;
@@ -506,13 +519,23 @@ p {
   line-height: 1.75; }
 
 .benefits {
-  padding: 40px 25px;
-  background-color: #ffffff; }
+  padding: 20px 25px;
+  padding-top: 50px;
+  background-color: #ffffff;
+  background-image: url("./img/deco/info-top-deco.svg");
+  background-position: top -20px center;
+  background-repeat: repeat-x;
+  background-size: 100px; }
 
 .benefits__header {
-  padding: 15px 60px;
+  padding: 20px 70px;
   margin-right: -25px;
-  background-color: #e49b0e; }
+  margin-bottom: 30px;
+  background-color: #e49b0e;
+  background-image: url("./img/deco/white-side-wave.svg"), url("./img/deco/white-side-flower.svg");
+  background-repeat: repeat-y, no-repeat;
+  background-size: 6px, 50px;
+  background-position: center left -1px, bottom left; }
 
 .benefits__title {
   margin: 0;

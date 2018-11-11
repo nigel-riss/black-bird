@@ -1,6 +1,29 @@
 .about {
+    // positioning
+    position: relative;
+
     // visual
     background-color: $black;
+
+    &::before {
+        content: '';
+
+        // positioning
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        // box model
+        height: 20px;
+        width: 100%;
+
+        // visual
+        background-image: url('./img/deco/orange-top-wave.svg');
+        background-repeat: repeat-x;
+        background-position: top center;
+        background-size: 40px;
+    }
 }
 
 .about__image {
