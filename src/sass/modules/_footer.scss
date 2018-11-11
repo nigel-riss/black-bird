@@ -1,23 +1,43 @@
 .footer {
-
+    // box model
+    padding: 40px 25px;
 }
 
 .footer__nav {
-
+    // box model
+    display: none;
 }
 
 .footer__logo {
+    // box model
+    margin-bottom: 40px;
+    
+    // typography
 
 }
 
 .footer__legals {
-
+    
 }
 
 .footer__copyrights {
-
+    // typography
+    color: $light;
+    font-family: $textFont;
+    font-size: 0.75rem;
+    text-align: center;
 }
 
 .footer__policy {
-    
+    // box model
+    display: block;
+
+    // typography
+    color: $light;
+    font-family: $textFont;
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 }

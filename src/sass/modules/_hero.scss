@@ -32,16 +32,24 @@
     background-color: $gamboge;
     background-image: url('./img/deco/black-side-wave.svg'), url('./img/deco/black-side-flower.svg');
     background-repeat: repeat-y, no-repeat;
-    background-size: 6px, 70px;
+    background-size: 6px, 60px;
     background-position: center right, center right;
 
     // typography
     color: $dark;
     font-family: $displayFont;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-style: italic;
     line-height: 1.25;
     // font-weight: 400;
+}
+
+.hero__intro em {
+    // box model
+    display: block;
+
+    // typography
+    text-align: right;
 }
 
 .hero__logo {

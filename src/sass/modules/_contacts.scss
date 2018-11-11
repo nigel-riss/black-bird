@@ -4,12 +4,8 @@
 
     // typography
     color: $light;
-    font-family: $textFont;
+    font-family: $displayFont;
     font-size: 1rem;
-
-    &--hero {
-
-    }
 }
 
 .contacts__address {
@@ -17,6 +13,8 @@
     margin: 0;
 
     // typography
+    font-family: $displayFont;
+    font-style: italic;
     line-height: 1.125;
 }
 
@@ -31,20 +29,4 @@
     
     // visual
     text-decoration: none;
-}
-
-.contacts__time {
-
-}
-
-.contacts__logo {
-
-}
-
-.contacts__social {
-
-}
-
-.contacts__social-cta {
-    
 }

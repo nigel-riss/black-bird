@@ -364,13 +364,17 @@ html, body {
   background-color: #e49b0e;
   background-image: url("./img/deco/black-side-wave.svg"), url("./img/deco/black-side-flower.svg");
   background-repeat: repeat-y, no-repeat;
-  background-size: 6px, 70px;
+  background-size: 6px, 60px;
   background-position: center right, center right;
   color: #131313;
   font-family: "Marta", Times, serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.25; }
+
+.hero__intro em {
+  display: block;
+  text-align: right; }
 
 .hero__logo {
   margin-bottom: 30px; }
@@ -397,11 +401,13 @@ html, body {
 .contacts {
   margin-bottom: 15px;
   color: #ffffff;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Marta", Times, serif;
   font-size: 1rem; }
 
 .contacts__address {
   margin: 0;
+  font-family: "Marta", Times, serif;
+  font-style: italic;
   line-height: 1.125; }
 
 .contacts__phone {
@@ -414,7 +420,7 @@ html, body {
 .logo__image {
   margin: 0 auto;
   margin-bottom: 10px;
-  width: 160px; }
+  width: 120px; }
 
 .logo__image img {
   height: 100%;
@@ -829,6 +835,31 @@ p {
   font-size: 1.25rem;
   line-height: 1.125;
   text-align: center; }
+
+.footer {
+  padding: 40px 25px; }
+
+.footer__nav {
+  display: none; }
+
+.footer__logo {
+  margin-bottom: 40px; }
+
+.footer__copyrights {
+  color: #ffffff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 0.75rem;
+  text-align: center; }
+
+.footer__policy {
+  display: block;
+  color: #ffffff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 body {
   color: #ffffff;
