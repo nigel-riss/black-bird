@@ -33,7 +33,7 @@
     // typography
     color: $black;
     font-family: $displayFont;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 400;
 }
@@ -45,16 +45,11 @@
     // typography
     color: $light;
     font-family: $displayFont;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-style: italic;
     line-height: 1.25rem;
 }
 
 .benefits__content {
-    // box model
-    margin: 0 auto;
-    width: 220px;
     
-    // typography
-    text-align: center;
 }

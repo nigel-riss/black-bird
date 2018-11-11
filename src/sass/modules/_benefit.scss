@@ -1,20 +1,22 @@
 .benefit {
     // box model
+    margin: 0 auto;
     margin-bottom: 40px;
-}
-
-.benefit__logo {
-    // box model
-    margin-bottom: 15px;
+    max-width: 260px;
 
     // typography
     text-align: center;
+}
 
-    img {
+.benefit__icon {
     // box model
-    width: 135px;
-    height: 135px;
-    }
+    margin-bottom: 10px;
+}
+
+.benefit__icon img {
+    // box model
+    height: 120px;
+    width: 120px;
 }
 
 .benefit__text {
@@ -24,7 +26,6 @@
 
     // typography
     color: $black;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
+    font-size: 0.9rem;
+    // font-weight: 600;
 }
