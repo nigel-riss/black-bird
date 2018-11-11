@@ -26,6 +26,10 @@
 
     // visual
     background-color: $gamboge;
+    background-image: url('./img/deco/black-side-wave.svg'), url('./img/deco/black-side-flower.svg');
+    background-repeat: repeat-y, no-repeat;
+    background-size: 10px, 70px;
+    background-position: right center, right center;
 
     // typography
     color: $dark;

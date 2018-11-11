@@ -358,6 +358,10 @@ html, body {
   padding-right: 70px;
   max-width: 345px;
   background-color: #e49b0e;
+  background-image: url("./img/deco/black-side-wave.svg"), url("./img/deco/black-side-flower.svg");
+  background-repeat: repeat-y, no-repeat;
+  background-size: 10px, 70px;
+  background-position: right center, right center;
   color: #131313;
   font-family: "Marta", Times, serif;
   font-size: 1.125rem;
