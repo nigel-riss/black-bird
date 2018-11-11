@@ -3,7 +3,10 @@
 }
 
 .logo__image {
-
+    // box model
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 160px;
 }
 
 .logo__image img {
@@ -17,12 +20,11 @@
     margin: 0 auto;
     margin-bottom: 10px;
     width: 260px;
-    border: 1px solid red;
 
     // typography
     color: $light;
     font-family: $displayFont;
-    font-size: 3.25rem;
+    font-size: 2.25rem;
     // line-height: 65px;
     text-align: center;
     text-transform: uppercase;
@@ -36,7 +38,7 @@
     // typography
     color: $gamboge;
     font-family: $textFont;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     font-style: normal;
     letter-spacing: 0.35em;
