@@ -593,13 +593,12 @@ p {
   text-align: center; }
 
 .price-list {
-  padding: 40px 25px;
-  padding-top: 60px;
+  padding: 60px 25px;
   background-color: #000000;
-  background-image: url("./img/deco/white-top-flower.svg"), url("./img/deco/info-top-deco.svg");
-  background-repeat: no-repeat, repeat-x;
-  background-size: 120px, 100px;
-  background-position: top 5px center, top center; }
+  background-image: url("./img/deco/white-top-flower.svg"), url("./img/deco/info-top-deco.svg"), url("./img/deco/orange-bottom-wave.svg");
+  background-repeat: no-repeat, repeat-x, repeat-x;
+  background-size: 120px, 100px, 40px;
+  background-position: top 5px center, top center, bottom center; }
 
 .price-list__header {
   margin-bottom: 35px; }
