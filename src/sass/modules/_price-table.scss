@@ -1,6 +1,7 @@
 .price-table {
     // box model
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .price-table__caption {
@@ -9,21 +10,48 @@
 
     // typography
     color: $gamboge;
-    font-size: 1.2rem;
+    font-family: $displayFont;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
 }
 
 .price-table__row {
-
+    // box model
 }
 
 .price-table__service {
+    // box model
+    vertical-align: top;
+    padding-bottom: 10px;
+    padding-right: 10px;
 
+    // typography
+    color: $light;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: $displayFont;
+}
+
+.price-table__service em {
+    // box model
+    display: block;
+
+    // typography
+    color: rgba($gamboge, 0.75);
+    font-size: 0.85rem;
 }
 
 .price-table__price {
+    // box model
+    vertical-align: top;
 
+    // typography
+    color: $light;
+    font-family: $displayFont;
+    text-align: right;
 }
 
 .price-table__description {

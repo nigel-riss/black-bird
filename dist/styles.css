@@ -608,7 +608,9 @@ p {
 .price-list__title {
   margin: 0;
   color: #ffffff;
-  font-size: 1.3rem;
+  font-family: "Marta", Times, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase; }
 
@@ -616,14 +618,38 @@ p {
   text-align: center; }
 
 .price-table {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  width: 100%; }
 
 .price-table__caption {
   margin-bottom: 15px;
   color: #e49b0e;
-  font-size: 1.2rem;
+  font-family: "Marta", Times, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase; }
+
+.price-table__service {
+  vertical-align: top;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "Marta", Times, serif; }
+
+.price-table__service em {
+  display: block;
+  color: rgba(228, 155, 14, 0.75);
+  font-size: 0.85rem; }
+
+.price-table__price {
+  vertical-align: top;
+  color: #ffffff;
+  font-family: "Marta", Times, serif;
+  text-align: right; }
 
 .price-table__description {
   column-span: 2; }
@@ -634,10 +660,11 @@ p {
 
 .team__title {
   margin: 0;
+  margin-bottom: 1em;
   color: #ffffff;
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 3px;
+  font-family: "Marta", Times, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase; }
 

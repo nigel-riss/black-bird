@@ -21,7 +21,9 @@
 
     // typography
     color: $light;
-    font-size: 1.3rem;
+    font-family: $displayFont;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
 }
