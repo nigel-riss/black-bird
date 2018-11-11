@@ -1,4 +1,25 @@
 .app-button {
     // box model
     display: block;
+    // border: 1px solid red;
+    height: 50px;
+    width: 160px;
+
+    // typography
+    font-size: 0;
+
+    // visual
+    background-size: 80%;
+    background-position: center left;
+    background-repeat: no-repeat;
+
+    &--astore {
+        // visual
+        background-image: url('./img/app-store.svg');
+    }
+
+    &--gplay {
+        // visual
+        background-image: url('./img/google-play.svg');
+    }
 }

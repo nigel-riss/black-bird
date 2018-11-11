@@ -1,20 +1,51 @@
 .app-promo {
-    // box model
-    display: flex;
-    align-items: flex-end;
-    padding: 0 25px;
-    padding-top: 25px;
+    // positioning
+    position: relative;
 
     // visual
     background-color: $light;
+    background-image: url('./img/deco/orange-top-wave.svg');
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: 40px;
     overflow: hidden;
+
+    &::after {
+        content: '';
+
+        // positioning
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        // box model
+        height: 20px;
+        width: 100%;
+
+        // visual
+        background-image: url('./img/deco/white-bottom-wave.svg');
+        background-repeat: repeat-x;
+        background-position: bottom center;
+        background-size: 40px;
+    }
 }
 
-.app-promo__img {
+.app-promo__header {
+    // box model
+    display: none;
+}
+
+.app-promo__image {
+    // positioning
+    position: absolute;
+    left: 25px;
+    bottom: -40px;
+    z-index: 1;
+
     // box model
     height: 345px;
-    margin-bottom: -40px;
-    margin-right: 20px;
 
     // visual
     z-index: 1;
@@ -30,24 +61,25 @@
 }
 
 .app-promo__cta {
-
-}
-
-.app-promo__text {
     // box model
     margin: 0;
+    padding: 40px 25px;
+    padding-left: 170px;
+    padding-bottom: 20px;
 
     // typography
-    color: $black;
-    font-size: 1.2rem;
-    font-weight: 600;
+    color: $dark;
+    font-family: $displayFont;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.25;
 }
 
 .app-promo__buttons {
-    // positioning
-
     // box model
-    width: 100%;
+    padding: 10px 25px;
+    padding-left: 170px;
+    padding-bottom: 15px;
 
     // visual
     background-color: $gamboge;

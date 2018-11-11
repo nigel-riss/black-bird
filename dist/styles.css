@@ -668,34 +668,70 @@ p {
   font-size: 1rem; }
 
 .app-promo {
-  display: flex;
-  align-items: flex-end;
-  padding: 0 25px;
-  padding-top: 25px;
+  position: relative;
   background-color: #ffffff;
+  background-image: url("./img/deco/orange-top-wave.svg");
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: 40px;
   overflow: hidden; }
+  .app-promo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 20px;
+    width: 100%;
+    background-image: url("./img/deco/white-bottom-wave.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 40px; }
 
-.app-promo__img {
+.app-promo__header {
+  display: none; }
+
+.app-promo__image {
+  position: absolute;
+  left: 25px;
+  bottom: -40px;
+  z-index: 1;
   height: 345px;
-  margin-bottom: -40px;
-  margin-right: 20px;
   z-index: 1; }
-  .app-promo__img img {
+  .app-promo__image img {
     height: 100%; }
 
-.app-promo__text {
+.app-promo__cta {
   margin: 0;
-  color: #000000;
-  font-size: 1.2rem;
-  font-weight: 600; }
+  padding: 40px 25px;
+  padding-left: 170px;
+  padding-bottom: 20px;
+  color: #131313;
+  font-family: "Marta", Times, serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25; }
 
 .app-promo__buttons {
-  width: 100%;
+  padding: 10px 25px;
+  padding-left: 170px;
+  padding-bottom: 15px;
   background-color: #e49b0e;
   z-index: 2; }
 
 .app-button {
-  display: block; }
+  display: block;
+  height: 50px;
+  width: 160px;
+  font-size: 0;
+  background-size: 80%;
+  background-position: center left;
+  background-repeat: no-repeat; }
+  .app-button--astore {
+    background-image: url("./img/app-store.svg"); }
+  .app-button--gplay {
+    background-image: url("./img/google-play.svg"); }
 
 .partners {
   padding: 40px 25px;
