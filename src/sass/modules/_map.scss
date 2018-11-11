@@ -5,6 +5,27 @@
     // box model
     height: 400px;
 
+    &::before {
+        content: '';
+
+        // positioning
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        // box model
+        height: 20px;
+        width: 100%;
+
+        // visual
+        background-image: url('./img/deco/white-top-wave.svg');
+        background-repeat: repeat-x;
+        background-position: top center;
+        background-size: 40px;
+    }
+
     &::after {
         content: '';
 
