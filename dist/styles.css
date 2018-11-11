@@ -751,6 +751,9 @@ p {
   display: flex;
   justify-content: space-between; }
 
+.ctcs {
+  background-color: #ffffff; }
+
 body {
   color: #ffffff;
   background-color: #131313; }
