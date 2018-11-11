@@ -1,9 +1,14 @@
 .ctcs {
     // box model
     padding: 40px 25px;
+    padding-bottom: 80px;
 
     // visual
     background-color: $light;
+    background-image: url('./img/deco/bird.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100px;
 }
 
 .ctcs__header {

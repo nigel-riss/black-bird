@@ -770,7 +770,12 @@ p {
 
 .ctcs {
   padding: 40px 25px;
-  background-color: #ffffff; }
+  padding-bottom: 80px;
+  background-color: #ffffff;
+  background-image: url("./img/deco/bird.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100px; }
 
 .ctcs__header {
   display: none; }
