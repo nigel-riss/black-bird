@@ -1,6 +1,7 @@
 .team {
     // box model
     padding: 40px 25px;
+    padding-bottom: 1px;
 
     // visual
     background-color: $gamboge;
@@ -13,7 +14,7 @@
 .team__title {
     // box model
     margin: 0;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 
     // typography
     color: $light;

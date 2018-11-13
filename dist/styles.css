@@ -690,11 +690,12 @@ p {
 
 .team {
   padding: 40px 25px;
+  padding-bottom: 1px;
   background-color: #e49b0e; }
 
 .team__title {
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   color: #ffffff;
   font-family: "Marta", Times, serif;
   font-size: 1.5rem;
@@ -703,9 +704,41 @@ p {
   text-transform: uppercase; }
 
 .member {
+  position: relative;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   background-color: #ffffff; }
+  .member::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 20px;
+    width: 100%;
+    background-image: url("./img/deco/white-bottom-wave.svg");
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 40px; }
+  .member::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 20px;
+    width: 100%;
+    background-image: url("./img/deco/white-top-wave.svg");
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: 40px; }
+
+.member__photo {
+  height: calc(100vw - 90px);
+  margin-bottom: 20px;
+  background-color: #808080; }
 
 .member__photo img {
   width: 100%;
@@ -719,16 +752,15 @@ p {
   margin: 0;
   margin-bottom: 20px;
   color: #808080;
+  font-family: "Marta", Times, serif;
   font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center; }
+  font-weight: 700; }
 
 .member__about {
-  margin: 0 auto;
   margin-bottom: 20px;
-  width: 180px;
+  padding: 0 30px;
   color: #000000;
-  font-size: 1rem; }
+  font-size: 0.85rem; }
 
 .app-promo {
   position: relative;
