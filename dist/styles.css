@@ -570,6 +570,9 @@ html, body {
 
 .about__content {
   padding: 40px 25px; }
+  @media (min-width: 700px) {
+    .about__content {
+      padding: 50px; } }
 
 .about__title {
   width: 1px;

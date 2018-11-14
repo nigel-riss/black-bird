@@ -67,6 +67,11 @@
 .about__content {
     // box model
     padding: 40px 25px;
+
+    @include atTablet {
+        // box model
+        padding: 50px;
+    }
 }
 
 .about__title {

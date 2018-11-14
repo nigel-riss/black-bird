@@ -31,10 +31,6 @@
 .hero__content {
     // box model
     max-width: 305px;
-    
-    @include atTablet {
-        // box model
-    }
 }
 
 .hero__intro {
