@@ -353,17 +353,18 @@ html, body {
   background-size: 40px; }
   @media (min-width: 700px) {
     .hero {
+      padding: 50px;
       background-color: #000000;
-      background-image: url("./img/deco/orange-bottom-wave.svg"), url("./img/hero-bg.jpg");
-      background-repeat: repeat-x, no-repeat;
-      background-position: bottom center, bottom left -80px;
-      background-size: 80px, cover; } }
+      background-image: url("./img/deco/orange-bottom-wave.svg"), linear-gradient(to right, rgba(19, 19, 19, 0.95) 0px, rgba(19, 19, 19, 0.75) 300px, transparent), url("./img/hero-bg.jpg");
+      background-repeat: repeat-x, no-repeat, no-repeat;
+      background-position: bottom -1px center, center center, bottom left -80px;
+      background-size: 80px, cover, cover; } }
 
 .hero__nav {
   display: none; }
 
 .hero__content {
-  width: 305px; }
+  max-width: 305px; }
 
 .hero__intro {
   margin-left: -30px;
@@ -384,7 +385,9 @@ html, body {
   @media (min-width: 700px) {
     .hero__intro {
       margin-bottom: 40px;
+      margin-left: -50px;
       padding: 30px;
+      padding-left: 50px;
       padding-right: 70px;
       font-size: 1.25rem; } }
 
