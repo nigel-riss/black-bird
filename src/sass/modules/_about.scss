@@ -23,6 +23,11 @@
         background-repeat: repeat-x;
         background-position: top center;
         background-size: 40px;
+
+        @include atTablet {
+            // visual
+            background-size: 80px;
+        }
     }
 
     &::after {

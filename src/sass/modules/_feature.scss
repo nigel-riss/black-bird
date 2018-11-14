@@ -12,6 +12,15 @@
     background-position: bottom center;
     background-size: 120px;
 
+    @include atTablet {
+        // box model
+        margin-bottom: 30px;
+        padding-bottom: 35px;
+
+        // visual
+        background-size: 200px;
+    }
+
     &:last-of-type {
         // visual
         background-image: none;
@@ -28,6 +37,11 @@
     font-family: $displayFont;
     font-size: 1.125rem;
     font-weight: 700;
+
+    @include atTablet {
+        // typography
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -40,5 +54,14 @@
     color: $light;
     font-family: $textFont;
     font-size: 0.9rem;
-    line-height: 20px;
+    line-height: 1.5;
+
+    @include atTablet {
+        // box model
+        margin: 0 auto;
+        width: 500px;
+
+        // typography
+        font-size: 1.125rem;
+    }
 }

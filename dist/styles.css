@@ -496,6 +496,11 @@ html, body {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 120px; }
+  @media (min-width: 700px) {
+    .feature {
+      margin-bottom: 30px;
+      padding-bottom: 35px;
+      background-size: 200px; } }
   .feature:last-of-type {
     background-image: none; }
 
@@ -506,13 +511,21 @@ html, body {
   font-family: "Marta", Times, serif;
   font-size: 1.125rem;
   font-weight: 700; }
+  @media (min-width: 700px) {
+    .feature__title {
+      font-size: 1.5rem; } }
 
 .feature__text {
   margin: 0;
   color: #ffffff;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 0.9rem;
-  line-height: 20px; }
+  line-height: 1.5; }
+  @media (min-width: 700px) {
+    .feature__text {
+      margin: 0 auto;
+      width: 500px;
+      font-size: 1.125rem; } }
 
 .about {
   position: relative;
@@ -529,6 +542,9 @@ html, body {
     background-repeat: repeat-x;
     background-position: top center;
     background-size: 40px; }
+    @media (min-width: 700px) {
+      .about::before {
+        background-size: 80px; } }
   .about::after {
     content: '';
     position: absolute;
