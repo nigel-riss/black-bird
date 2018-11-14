@@ -5,10 +5,15 @@
 
     // visual
     background-color: $light;
-    background-image: url('./img/deco/info-bottom-deco.svg');
-    background-position: top -20px center;
-    background-repeat: repeat-x;
-    background-size: 100px;
+    background-image: url(./img/deco/b-pole.png), url('./img/deco/info-bottom-deco.svg');
+    background-position: top 200px left -25px, top -20px center;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 160px, 100px;
+
+    @include atTablet {
+        // box model
+        padding: 50px;
+    }
 }
 
 .benefits__header {
@@ -36,6 +41,11 @@
     font-size: 1rem;
     font-style: italic;
     font-weight: 400;
+
+    @include atTablet {
+        // typography
+        font-size: 1.5rem;
+    }
 }
 
 .benefits__subtitle {
@@ -48,6 +58,11 @@
     font-size: 1.25rem;
     font-style: italic;
     line-height: 1.25rem;
+
+    @include atTablet {
+        // typography
+        font-size: 1.75rem;
+    }
 }
 
 .benefits__content {
