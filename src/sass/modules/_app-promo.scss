@@ -2,6 +2,11 @@
     // positioning
     position: relative;
 
+    // box model
+    min-height: 370px;
+    display: flex;
+    align-items: flex-end;
+
     // visual
     background-color: $light;
     background-image: url('./img/deco/orange-top-wave.svg');

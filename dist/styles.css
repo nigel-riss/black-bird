@@ -818,6 +818,9 @@ p {
 
 .app-promo {
   position: relative;
+  min-height: 370px;
+  display: flex;
+  align-items: flex-end;
   background-color: #ffffff;
   background-image: url("./img/deco/orange-top-wave.svg");
   background-repeat: repeat-x;
