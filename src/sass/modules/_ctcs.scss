@@ -9,20 +9,41 @@
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: 100px;
+
+    @include atTablet {
+        // box model
+        display: flex;
+        padding: 50px;
+        padding-bottom: 30px;
+        justify-content: space-around;
+        min-height: 280px;
+
+        // visual
+        background-size: 140px;
+    }
 }
 
 .ctcs__header {
-    // box model
-    display: none;
+    // typography
+    text-align: center;
+
+    @include atTablet {
+        // positioning
+        position: relative;
+        z-index: 2;
+
+        // box model
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .ctcs__title {
-
-}
-
-.ctcs__content {
-    // typography
-    text-align: center;
+    // box model
+    display: none;
 }
 
 .ctcs__address {
@@ -32,9 +53,16 @@
 
     // typography
     color: $dark;
-    font-family: $textFont;
+    font-family: $displayFont;
     font-size: 1.25rem;
+    font-weight: 700;
     line-height: 1.25;
+
+    @include atTablet {
+        // typography
+        font-size: 1.125rem;
+        font-size: 1rem;
+    }
 }
 
 .ctcs__phone {
@@ -55,6 +83,17 @@
     background-repeat: no-repeat;
     background-position: bottom 12px center;
     background-size: 200px;
+    
+    @include atTablet {
+        // box model
+        padding-bottom: 60px;
+        
+        // typography
+        font-size: 1rem;
+        
+        // visual
+        background-position: bottom 22px center;
+    }
 }
 
 .ctcs__time {
@@ -67,12 +106,26 @@
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.125;
+
+    @include atTablet {
+        // typography
+        font-size: 1.125rem;
+        font-size: 1rem;
+    }
 }
 
 .ctcs__logo {
     // box model
     margin: 10px auto;
     width: 200px;
+
+    @include atTablet {
+        // box model
+        width: auto;
+        flex-basis: 260px;
+        margin: 0 -50px;
+        margin-top: -80px;
+    }
 }
 
 .ctcs__logo img {
@@ -83,6 +136,19 @@
 .ctcs__social {
     // box model
     margin-bottom: 20px;
+
+    @include atTablet {
+        // positioning
+        position: relative;
+        z-index: 2;
+
+        // box model
+        flex-basis: 30%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
 
 .ctcs__social-cta {
@@ -98,4 +164,12 @@
     font-size: 1.25rem;
     line-height: 1.125;
     text-align: center;
+
+    @include atTablet {
+        // box model
+        width: auto;
+
+        // typography
+        font-size: 1rem;
+    }
 }

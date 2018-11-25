@@ -944,20 +944,42 @@ p {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 100px; }
+  @media (min-width: 700px) {
+    .ctcs {
+      display: flex;
+      padding: 50px;
+      padding-bottom: 30px;
+      justify-content: space-around;
+      min-height: 280px;
+      background-size: 140px; } }
 
 .ctcs__header {
-  display: none; }
-
-.ctcs__content {
   text-align: center; }
+  @media (min-width: 700px) {
+    .ctcs__header {
+      position: relative;
+      z-index: 2;
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+
+.ctcs__title {
+  display: none; }
 
 .ctcs__address {
   margin: 0;
   margin-bottom: 0.25em;
   color: #131313;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Marta", Times, serif;
   font-size: 1.25rem;
+  font-weight: 700;
   line-height: 1.25; }
+  @media (min-width: 700px) {
+    .ctcs__address {
+      font-size: 1.125rem;
+      font-size: 1rem; } }
 
 .ctcs__phone {
   display: block;
@@ -972,6 +994,11 @@ p {
   background-repeat: no-repeat;
   background-position: bottom 12px center;
   background-size: 200px; }
+  @media (min-width: 700px) {
+    .ctcs__phone {
+      padding-bottom: 60px;
+      font-size: 1rem;
+      background-position: bottom 22px center; } }
 
 .ctcs__time {
   margin: 0;
@@ -980,16 +1007,35 @@ p {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.125; }
+  @media (min-width: 700px) {
+    .ctcs__time {
+      font-size: 1.125rem;
+      font-size: 1rem; } }
 
 .ctcs__logo {
   margin: 10px auto;
   width: 200px; }
+  @media (min-width: 700px) {
+    .ctcs__logo {
+      width: auto;
+      flex-basis: 260px;
+      margin: 0 -50px;
+      margin-top: -80px; } }
 
 .ctcs__logo img {
   width: 100%; }
 
 .ctcs__social {
   margin-bottom: 20px; }
+  @media (min-width: 700px) {
+    .ctcs__social {
+      position: relative;
+      z-index: 2;
+      flex-basis: 30%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 0; } }
 
 .ctcs__social-cta {
   margin: 0 auto;
@@ -1001,6 +1047,10 @@ p {
   font-size: 1.25rem;
   line-height: 1.125;
   text-align: center; }
+  @media (min-width: 700px) {
+    .ctcs__social-cta {
+      width: auto;
+      font-size: 1rem; } }
 
 .social {
   margin: 0;
