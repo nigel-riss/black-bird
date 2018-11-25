@@ -1,11 +1,42 @@
 .social {
+    // box model
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 
+    // list
+    list-style: none;
 }
 
 .social__item {
+    // box model
+    height: 64px;
+    width: 64px;
+    margin: 0 15px;
+    padding: 16px;
 
+    // visual
+    background-image: url('./img/deco/badge.svg');
+    background-repeat: no-repeat;
 }
 
 .social__icon {
-    
+    // box model
+    display: block;
+    height: 30px;
+    width: 30px;
+
+    // typography
+    font-size: 0;
+
+    &--instagram {
+        // visual
+        background-image: url('./img/instagram.svg');
+    }
+
+    &--vk {
+        // visual
+        background-image: url('./img/vk.svg');
+    }
 }

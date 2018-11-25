@@ -81,12 +81,14 @@
 }
 
 .ctcs__social {
-
+    // box model
+    margin-bottom: 20px;
 }
 
 .ctcs__social-cta {
     // box model
     margin: 0 auto;
+    margin-bottom: 20px;
     width: 280px;
 
     // typography

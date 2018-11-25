@@ -988,8 +988,12 @@ p {
 .ctcs__logo img {
   width: 100%; }
 
+.ctcs__social {
+  margin-bottom: 20px; }
+
 .ctcs__social-cta {
   margin: 0 auto;
+  margin-bottom: 20px;
   width: 280px;
   color: #131313;
   font-family: "Marta", Times, serif;
@@ -997,6 +1001,31 @@ p {
   font-size: 1.25rem;
   line-height: 1.125;
   text-align: center; }
+
+.social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none; }
+
+.social__item {
+  height: 64px;
+  width: 64px;
+  margin: 0 15px;
+  padding: 16px;
+  background-image: url("./img/deco/badge.svg");
+  background-repeat: no-repeat; }
+
+.social__icon {
+  display: block;
+  height: 30px;
+  width: 30px;
+  font-size: 0; }
+  .social__icon--instagram {
+    background-image: url("./img/instagram.svg"); }
+  .social__icon--vk {
+    background-image: url("./img/vk.svg"); }
 
 .footer {
   padding: 40px 25px; }
