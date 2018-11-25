@@ -16,21 +16,38 @@
 
         // visual
         background-color: $black;
-        background-image:  url('./img/deco/orange-bottom-wave.svg'), linear-gradient(to right, rgba($dark, 0.95) 0px, rgba($dark, 0.75) 300px, transparent), url('./img/hero-bg.jpg');
+        background-image:  url('./img/deco/orange-bottom-wave.svg'), linear-gradient(to right, rgba($dark, 0.95) 0px, rgba($dark, 0.75) 300px, transparent), url('./img/deco/hero-bg.jpg');
         background-repeat: repeat-x, no-repeat, no-repeat;
-        background-position: bottom -1px center, center center, bottom left -80px;
+        background-position: bottom -1px center, center center, bottom right -120px;
         background-size: 80px, cover, cover;
+    }
+    
+    @include atDesktopS {
+        // visual
+        background-position: bottom -1px center, center center, bottom right;
+        background-size: 80px, cover, contain;
     }
 }
 
 .hero__nav {
-    // visual
+    // box model
     display: none;
+
+    @include atDesktopS {
+        // box model
+        display: block;
+    }
 }
 
 .hero__content {
     // box model
     max-width: 305px;
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        max-width: 100%;
+    }
 }
 
 .hero__intro {
@@ -47,7 +64,7 @@
     background-repeat: repeat-y, no-repeat;
     background-size: 6px, 60px;
     background-position: center right, center right;
-
+    
     // typography
     color: $dark;
     font-family: $displayFont;
@@ -65,6 +82,20 @@
         
         // typography
         font-size: 1.25rem;
+        background-size: 9px, 75px;
+    }
+    
+    @include atDesktopS {
+        // box model
+        flex-basis: 33%;
+        width: 33%;
+        max-width: 33%;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        // visual
     }
 }
 
@@ -82,11 +113,21 @@
 }
 
 .hero__logo {
-    // box model
-    margin-bottom: 30px;
+    @include atDesktopS {
+        // box model
+        flex-basis: 33%;
+    }
 }
 
 .hero__cta {
+    // box model
+    margin-top: 30px;
+
     // typography
     text-align: center;
+
+    @include atDesktopS {
+        // box model
+        margin-top: 50px;
+    }
 }

@@ -40,6 +40,11 @@
         line-height: 1;
     }
 
+    @include atDesktopS {
+        // box model
+        width: auto;
+    }
+
     &--footer {
         // box model
         width: auto;

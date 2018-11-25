@@ -355,16 +355,27 @@ html, body {
     .hero {
       padding: 50px;
       background-color: #000000;
-      background-image: url("./img/deco/orange-bottom-wave.svg"), linear-gradient(to right, rgba(19, 19, 19, 0.95) 0px, rgba(19, 19, 19, 0.75) 300px, transparent), url("./img/hero-bg.jpg");
+      background-image: url("./img/deco/orange-bottom-wave.svg"), linear-gradient(to right, rgba(19, 19, 19, 0.95) 0px, rgba(19, 19, 19, 0.75) 300px, transparent), url("./img/deco/hero-bg.jpg");
       background-repeat: repeat-x, no-repeat, no-repeat;
-      background-position: bottom -1px center, center center, bottom left -80px;
+      background-position: bottom -1px center, center center, bottom right -120px;
       background-size: 80px, cover, cover; } }
+  @media (min-width: 1000px) {
+    .hero {
+      background-position: bottom -1px center, center center, bottom right;
+      background-size: 80px, cover, contain; } }
 
 .hero__nav {
   display: none; }
+  @media (min-width: 1000px) {
+    .hero__nav {
+      display: block; } }
 
 .hero__content {
   max-width: 305px; }
+  @media (min-width: 1000px) {
+    .hero__content {
+      display: flex;
+      max-width: 100%; } }
 
 .hero__intro {
   margin-left: -30px;
@@ -389,7 +400,17 @@ html, body {
       padding: 30px;
       padding-left: 50px;
       padding-right: 70px;
-      font-size: 1.25rem; } }
+      font-size: 1.25rem;
+      background-size: 9px, 75px; } }
+  @media (min-width: 1000px) {
+    .hero__intro {
+      flex-basis: 33%;
+      width: 33%;
+      max-width: 33%;
+      margin-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 .hero__intro em {
   display: block;
@@ -398,11 +419,16 @@ html, body {
     .hero__intro em {
       padding-top: 1em; } }
 
-.hero__logo {
-  margin-bottom: 30px; }
+@media (min-width: 1000px) {
+  .hero__logo {
+    flex-basis: 33%; } }
 
 .hero__cta {
+  margin-top: 30px;
   text-align: center; }
+  @media (min-width: 1000px) {
+    .hero__cta {
+      margin-top: 50px; } }
 
 .button {
   display: inline-block;
@@ -472,6 +498,9 @@ html, body {
     .logo__title {
       font-size: 3rem;
       line-height: 1; } }
+  @media (min-width: 1000px) {
+    .logo__title {
+      width: auto; } }
   .logo__title--footer {
     width: auto; }
     @media (min-width: 700px) {
