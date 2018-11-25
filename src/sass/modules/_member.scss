@@ -50,11 +50,23 @@
         background-position: top center;
         background-size: 40px;
     }
+
+    @include atTablet {
+        // box model
+        flex-basis: 47%;
+        margin: 1% 0;
+        margin-bottom: 60px;
+    }
 }
 
 .member__photo {
+    // positioning
+    position: relative;
+
     // box model
-    height: calc(100vw - 90px);
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
     margin-bottom: 20px;
 
     // visual
@@ -62,6 +74,13 @@
 }
 
 .member__photo img {
+    // positioning
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     // box model
     width: 100%;
     height: 100%;

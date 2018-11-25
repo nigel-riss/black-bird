@@ -8,6 +8,11 @@
     background-repeat: no-repeat, repeat-x, repeat-x;
     background-size: 120px, 100px, 40px;
     background-position: top 5px center, top center, bottom center;
+
+    @include atTablet {
+        // box model
+        padding: 60px 50px;
+    }
 }
 
 .price-list__header {
