@@ -472,12 +472,17 @@ html, body {
     .logo__title {
       font-size: 3rem;
       line-height: 1; } }
+  .logo__title--footer {
+    width: auto; }
+    @media (min-width: 700px) {
+      .logo__title--footer {
+        font-size: 4rem; } }
 
 .logo__title em {
   display: block;
   color: #e49b0e;
   font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.35em;
   font-weight: bold;
   font-style: normal;
   letter-spacing: 0.35em;
@@ -1082,6 +1087,9 @@ p {
 
 .footer__nav {
   display: none; }
+  @media (min-width: 700px) {
+    .footer__nav {
+      display: block; } }
 
 .footer__logo {
   margin-bottom: 40px; }
@@ -1101,6 +1109,24 @@ p {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase; }
+
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  text-align: center;
+  list-style: none; }
+
+.footer-nav__item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 20px; }
+
+.footer-nav__link {
+  color: #e49b0e;
+  font-family: "Marta", Times, serif;
+  font-weight: 700px;
+  text-decoration: none; }
 
 body {
   color: #ffffff;

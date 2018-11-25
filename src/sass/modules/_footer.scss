@@ -6,6 +6,11 @@
 .footer__nav {
     // box model
     display: none;
+
+    @include atTablet {
+        // box model
+        display: block;
+    }
 }
 
 .footer__logo {

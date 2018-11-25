@@ -1,0 +1,31 @@
+.footer-nav {
+
+}
+
+.footer-nav__list {
+    // box model
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+
+    // typography
+    text-align: center;
+
+    // list
+    list-style: none;
+}
+
+.footer-nav__item {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 20px;
+}
+
+.footer-nav__link {
+    // typography
+    color: $gamboge;
+    font-family: $displayFont;
+    font-weight: 700px;
+    text-decoration: none;
+}

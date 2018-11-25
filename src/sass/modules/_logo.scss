@@ -33,11 +33,21 @@
     // line-height: 65px;
     text-align: center;
     text-transform: uppercase;
-
+    
     @include atTablet {
         // typography
         font-size: 3rem;
         line-height: 1;
+    }
+
+    &--footer {
+        // box model
+        width: auto;
+
+        @include atTablet {
+            // typography
+            font-size: 4rem;
+        }
     }
 }
 
@@ -48,7 +58,7 @@
     // typography
     color: $gamboge;
     font-family: $textFont;
-    font-size: 1rem;
+    font-size: 0.35em;
     font-weight: bold;
     font-style: normal;
     letter-spacing: 0.35em;
