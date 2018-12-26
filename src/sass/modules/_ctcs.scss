@@ -115,6 +115,10 @@
 }
 
 .ctcs__logo {
+    // positioning
+    position: relative;
+    z-index: 2;
+    
     // box model
     margin: 10px auto;
     width: 200px;
