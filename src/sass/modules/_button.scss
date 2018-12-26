@@ -7,7 +7,7 @@
     // typography
     color: $light;
     font-family: $displayFont;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 50px;
@@ -18,4 +18,18 @@
     // visual
     background-color: $gamboge;
     border-radius: 10px;
+    transition: all 0.25s ease-out;
+
+    @include atDesktopS {
+        // typography
+        font-size: 1rem;
+    }
+}
+
+.button:hover {
+    // typography
+    color: $gamboge;
+
+    // visual
+    background-color: $light;
 }

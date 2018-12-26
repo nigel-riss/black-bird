@@ -13,6 +13,15 @@
 
     // visual
     background-color: rgba($dark, 0.95);
+
+    @include atDesktopS {
+        // box model
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        // visual
+        background-color: transparent;
+    }
 }
 
 .main-nav__list {
@@ -28,6 +37,13 @@
     // box model
     margin: 5px 0;
     padding: 0;
+
+    @include atDesktopS {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 10px;
+    }
 }
 
 .main-nav__link {
@@ -41,4 +57,10 @@
     font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
+
+    @include atDesktopS {
+        // typography
+        color: $gamboge;
+        font-size: 1rem;
+    }
 }

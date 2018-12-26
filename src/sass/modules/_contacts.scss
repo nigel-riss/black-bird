@@ -6,6 +6,11 @@
     color: $light;
     font-family: $displayFont;
     font-size: 1rem;
+
+    @include atDesktopS {
+        // box model
+        width: 250px;
+    }
 }
 
 .contacts__address {
@@ -22,6 +27,11 @@
         font-size: 1.25rem;
         line-height: 1.25;
     }
+
+    @include atDesktopS {
+        // typography
+        font-size: 1rem;
+    }
 }
 
 .contacts__phone {
@@ -29,7 +39,7 @@
     margin: 0;
 
     // typography
-    color: $light; 
+    color: $gamboge;
     font-weight: bold;
     line-height: 1.75;
     
@@ -40,5 +50,10 @@
         // typography
         font-size: 1.25rem;
         line-height: 1.5;
+    }
+
+    @include atDesktopS {
+        // typography
+        font-size: 1rem;
     }
 }

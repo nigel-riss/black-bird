@@ -29,6 +29,14 @@
     }
 }
 
+.hero__top {
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .hero__nav {
     // positioning
     position: fixed;
@@ -45,14 +53,26 @@
     transition: all 0.25s ease-out;
 
     @include atDesktopS {
+        // positioning
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        top: auto;
+
         // box model
-        display: block;
+        max-width: inherit;
     }
 }
 
 .hero__nav--hidden {
     // positioning
     right: -110%;
+
+    @include atDesktopS {
+        // positioning
+        right: auto;
+    }
 }
 
 .hero__content {
@@ -110,8 +130,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height: 160px;
+
+        // typography
+        font-size: 1rem;
 
         // visual
+        background-size: 6px, 60px;
     }
 }
 
