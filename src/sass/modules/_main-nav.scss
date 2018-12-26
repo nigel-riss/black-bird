@@ -44,6 +44,11 @@
         vertical-align: top;
         margin: 0 10px;
     }
+
+    @include atDesktopM {
+        // box model
+        margin: 0 15px;
+    }
 }
 
 .main-nav__link {
@@ -55,6 +60,7 @@
     color: $light;
     font-family: $displayFont;
     font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
 
@@ -62,6 +68,16 @@
         // typography
         color: $gamboge;
         font-size: 1rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.25rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 1.5rem;
     }
 }
 

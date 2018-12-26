@@ -11,6 +11,16 @@
         // box model
         width: 250px;
     }
+
+    @include atDesktopM {
+        // box model
+        width: 300px;
+    }
+
+    @include atDesktopL {
+        // box model
+        width: 350px;
+    }
 }
 
 .contacts__address {
@@ -31,6 +41,16 @@
     @include atDesktopS {
         // typography
         font-size: 1rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.25rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 1.5rem;
     }
 }
 
@@ -55,6 +75,16 @@
     @include atDesktopS {
         // typography
         font-size: 1rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.25rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 1.5rem;
     }
 }
 

@@ -27,6 +27,23 @@
         background-position: bottom -1px center, center center, bottom right;
         background-size: 80px, cover, contain;
     }
+
+    @include atDesktopM {
+        // box model
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        min-height: 620px;
+        max-height: 800px;
+    }
+
+    @include atDesktopL {
+        // box model
+        min-height: 720px;
+        max-height: 820px;
+        padding: 60px;
+    }
 }
 
 .hero__top {
@@ -83,6 +100,12 @@
         // box model
         display: flex;
         max-width: 100%;
+        align-items: center;
+    }
+
+    @include atDesktopM {
+        // box model
+        flex-grow: 1;
     }
 }
 
@@ -138,6 +161,28 @@
 
         // visual
         background-size: 6px, 60px;
+    }
+    
+    @include atDesktopM {
+        // box model
+        height: 200px;
+        margin-left: -60px;
+
+        // typography
+        font-size: 1.25rem;
+
+        // visual
+        background-size: 9px, 75px;
+    }
+
+    @include atDesktopL {
+        // box model
+        height: 240px;
+        max-width: 32%;
+        margin-right: calc(1% + 60px);
+
+        // typography
+        font-size: 1.5rem;
     }
 }
 

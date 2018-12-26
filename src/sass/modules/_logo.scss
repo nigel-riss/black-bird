@@ -12,6 +12,18 @@
         // box model
         width: 160px;
     }
+
+    @include atDesktopM {
+        // box model
+        width: 190px;
+        margin-bottom: 20px;
+    }
+
+    @include atDesktopL {
+        // box model
+        width: 220px;
+        margin-bottom: 30px;
+    }
 }
 
 .logo__image img {
@@ -43,6 +55,16 @@
     @include atDesktopS {
         // box model
         width: auto;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 3.5rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 4rem;
     }
 
     &--footer {

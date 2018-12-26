@@ -365,6 +365,19 @@ html, body {
     .hero {
       background-position: bottom -1px center, center center, bottom right;
       background-size: 80px, cover, contain; } }
+  @media (min-width: 1200px) {
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      min-height: 620px;
+      max-height: 800px; } }
+  @media (min-width: 1500px) {
+    .hero {
+      min-height: 720px;
+      max-height: 820px;
+      padding: 60px; } }
 
 @media (min-width: 1000px) {
   .hero__top {
@@ -400,7 +413,11 @@ html, body {
   @media (min-width: 1000px) {
     .hero__content {
       display: flex;
-      max-width: 100%; } }
+      max-width: 100%;
+      align-items: center; } }
+  @media (min-width: 1200px) {
+    .hero__content {
+      flex-grow: 1; } }
 
 .hero__intro {
   margin-left: -30px;
@@ -440,6 +457,18 @@ html, body {
       height: 160px;
       font-size: 1rem;
       background-size: 6px, 60px; } }
+  @media (min-width: 1200px) {
+    .hero__intro {
+      height: 200px;
+      margin-left: -60px;
+      font-size: 1.25rem;
+      background-size: 9px, 75px; } }
+  @media (min-width: 1500px) {
+    .hero__intro {
+      height: 240px;
+      max-width: 32%;
+      margin-right: calc(1% + 60px);
+      font-size: 1.5rem; } }
 
 .hero__intro em {
   display: block;
@@ -491,6 +520,12 @@ html, body {
   @media (min-width: 1000px) {
     .contacts {
       width: 250px; } }
+  @media (min-width: 1200px) {
+    .contacts {
+      width: 300px; } }
+  @media (min-width: 1500px) {
+    .contacts {
+      width: 350px; } }
 
 .contacts__address {
   margin: 0;
@@ -504,6 +539,12 @@ html, body {
   @media (min-width: 1000px) {
     .contacts__address {
       font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .contacts__address {
+      font-size: 1.25rem; } }
+  @media (min-width: 1500px) {
+    .contacts__address {
+      font-size: 1.5rem; } }
 
 .contacts__phone {
   margin: 0;
@@ -518,6 +559,12 @@ html, body {
   @media (min-width: 1000px) {
     .contacts__phone {
       font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .contacts__phone {
+      font-size: 1.25rem; } }
+  @media (min-width: 1500px) {
+    .contacts__phone {
+      font-size: 1.5rem; } }
 
 .contacts__phone:hover {
   color: #ffffff; }
@@ -529,6 +576,14 @@ html, body {
   @media (min-width: 700px) {
     .logo__image {
       width: 160px; } }
+  @media (min-width: 1200px) {
+    .logo__image {
+      width: 190px;
+      margin-bottom: 20px; } }
+  @media (min-width: 1500px) {
+    .logo__image {
+      width: 220px;
+      margin-bottom: 30px; } }
 
 .logo__image img {
   height: 100%;
@@ -550,6 +605,12 @@ html, body {
   @media (min-width: 1000px) {
     .logo__title {
       width: auto; } }
+  @media (min-width: 1200px) {
+    .logo__title {
+      font-size: 3.5rem; } }
+  @media (min-width: 1500px) {
+    .logo__title {
+      font-size: 4rem; } }
   .logo__title--footer {
     width: auto; }
     @media (min-width: 700px) {
@@ -595,6 +656,9 @@ html, body {
       display: inline-block;
       vertical-align: top;
       margin: 0 10px; } }
+  @media (min-width: 1200px) {
+    .main-nav__item {
+      margin: 0 15px; } }
 
 .main-nav__link {
   display: block;
@@ -602,12 +666,19 @@ html, body {
   color: #ffffff;
   font-family: "Marta", Times, serif;
   font-size: 1.5rem;
+  font-weight: 700;
   text-align: center;
   text-decoration: none; }
   @media (min-width: 1000px) {
     .main-nav__link {
       color: #e49b0e;
       font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .main-nav__link {
+      font-size: 1.25rem; } }
+  @media (min-width: 1500px) {
+    .main-nav__link {
+      font-size: 1.5rem; } }
 
 @media (min-width: 1000px) {
   .main-nav__link:hover {
