@@ -823,9 +823,9 @@ html, body {
     .benefits {
       padding: 50px;
       background-image: url(./img/deco/b-pole.png), url("./img/deco/info-bottom-deco.svg");
-      background-position: top 200px left -25px, top -20px center;
+      background-position: center left -25px, top -20px center;
       background-repeat: no-repeat, repeat-x;
-      background-size: 160px, 100px; } }
+      background-size: 120px, 100px; } }
 
 .benefits__header {
   padding: 20px 70px;
@@ -836,6 +836,13 @@ html, body {
   background-repeat: repeat-y, no-repeat;
   background-size: 6px, 50px;
   background-position: center left -1px, bottom left; }
+  @media (min-width: 700px) {
+    .benefits__header {
+      margin-right: -50px; } }
+  @media (min-width: 1000px) {
+    .benefits__header {
+      width: 540px;
+      margin-left: auto; } }
 
 .benefits__title {
   margin: 0;
@@ -848,6 +855,9 @@ html, body {
   @media (min-width: 700px) {
     .benefits__title {
       font-size: 1.5rem; } }
+  @media (min-width: 1000px) {
+    .benefits__title {
+      font-size: 1.25rem; } }
 
 .benefits__subtitle {
   margin: 0;
@@ -859,12 +869,32 @@ html, body {
   @media (min-width: 700px) {
     .benefits__subtitle {
       font-size: 1.75rem; } }
+  @media (min-width: 1000px) {
+    .benefits__subtitle {
+      font-size: 1.5rem; } }
+
+@media (min-width: 700px) {
+  .benefits__content {
+    padding: 40px 0;
+    padding-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
 
 .benefit {
   margin: 0 auto;
   margin-bottom: 40px;
   max-width: 260px;
   text-align: center; }
+  @media (min-width: 700px) {
+    .benefit {
+      margin: 0;
+      margin-bottom: 40px;
+      flex-basis: 40%;
+      width: 260px; } }
+  @media (min-width: 1000px) {
+    .benefit {
+      flex-basis: 30%; } }
 
 .benefit__icon {
   margin-bottom: 10px; }
@@ -877,7 +907,9 @@ html, body {
   margin: 0;
   padding: 0 25px;
   color: #000000;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  font-family: "Marta", Times, serif;
+  font-weight: 700; }
 
 .price-list {
   padding: 60px 25px;

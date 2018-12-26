@@ -6,6 +6,19 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        margin: 0;
+        margin-bottom: 40px;
+        flex-basis: 40%;
+        width: 260px;
+    }
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 30%;
+    }
 }
 
 .benefit__icon {
@@ -27,5 +40,6 @@
     // typography
     color: $black;
     font-size: 0.9rem;
-    // font-weight: 600;
+    font-family: $displayFont;
+    font-weight: 700;
 }

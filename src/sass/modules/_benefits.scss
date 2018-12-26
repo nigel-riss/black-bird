@@ -16,9 +16,9 @@
 
         // visual
         background-image: url(./img/deco/b-pole.png), url('./img/deco/info-bottom-deco.svg');
-        background-position: top 200px left -25px, top -20px center;
+        background-position: center left -25px, top -20px center;
         background-repeat: no-repeat, repeat-x;
-        background-size: 160px, 100px;
+        background-size: 120px, 100px;
     }
 }
 
@@ -34,6 +34,17 @@
     background-repeat: repeat-y, no-repeat;
     background-size: 6px, 50px;
     background-position: center left -1px, bottom left;
+
+    @include atTablet {
+        // box model
+        margin-right: -50px;
+    }
+
+    @include atDesktopS {
+        // box model
+        width: 540px;
+        margin-left: auto;
+    }
 }
 
 .benefits__title {
@@ -52,6 +63,11 @@
         // typography
         font-size: 1.5rem;
     }
+
+    @include atDesktopS {
+        // typography
+        font-size: 1.25rem;
+    }
 }
 
 .benefits__subtitle {
@@ -69,8 +85,20 @@
         // typography
         font-size: 1.75rem;
     }
+
+    @include atDesktopS {
+        // typography
+        font-size: 1.5rem;
+    }
 }
 
 .benefits__content {
-    
+    @include atTablet {
+        // box model
+        padding: 40px 0;
+        padding-left: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
