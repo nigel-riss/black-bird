@@ -12,3 +12,11 @@
     // TODO: do this propper way
     display: none;
 }
+
+.featured__content {
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: center;
+    }
+}

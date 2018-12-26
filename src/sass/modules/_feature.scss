@@ -21,6 +21,16 @@
         background-size: 200px;
     }
 
+    @include atDesktopS {
+        // box model
+        flex-basis: 33%;
+        margin: 0 20px;
+        max-width: 280px;
+
+        // visual
+        background-image: none;
+    }
+
     &:last-of-type {
         // visual
         background-image: none;
@@ -42,9 +52,12 @@
         // typography
         font-size: 1.5rem;
     }
+
+    @include atDesktopS {
+        // typography
+        font-size: 1rem;
+    }
 }
-
-
 
 .feature__text {
     // box model
@@ -63,5 +76,13 @@
 
         // typography
         font-size: 1.125rem;
+    }
+
+    @include atDesktopS {
+        // box model
+        width: auto;
+
+        // typography
+        font-size: 0.85rem;
     }
 }
