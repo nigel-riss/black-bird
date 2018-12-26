@@ -674,7 +674,8 @@ html, body {
 @media (min-width: 1000px) {
   .featured__content {
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    align-items: center; } }
 
 .feature {
   margin-bottom: 20px;
@@ -731,6 +732,10 @@ html, body {
 .about {
   position: relative;
   background-color: #000000; }
+  @media (min-width: 1000px) {
+    .about {
+      padding: 50px;
+      display: flex; } }
   .about::before {
     content: '';
     position: absolute;
@@ -760,6 +765,10 @@ html, body {
 .about__image {
   width: 100%;
   height: 100%; }
+  @media (min-width: 1000px) {
+    .about__image {
+      padding-top: 60px;
+      flex-basis: 50%; } }
 
 .about__image img {
   width: 100%;
@@ -771,6 +780,9 @@ html, body {
   @media (min-width: 700px) {
     .about__content {
       padding: 50px; } }
+  @media (min-width: 1000px) {
+    .about__content {
+      flex-basis: 50%; } }
 
 .about__title {
   width: 1px;
@@ -786,12 +798,18 @@ html, body {
   font-family: "Marta", Times, serif;
   font-size: 1.5rem;
   line-height: 1.5; }
+  @media (min-width: 1000px) {
+    .about__subtitle {
+      font-size: 1.25rem; } }
 
-p {
+.about__text p {
   color: #ffffff;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.75; }
+  @media (min-width: 1000px) {
+    .about__text p {
+      font-size: 0.85rem; } }
 
 .benefits {
   padding: 50px 25px;

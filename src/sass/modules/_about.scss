@@ -5,6 +5,12 @@
     // visual
     background-color: $black;
 
+    @include atDesktopS {
+        // box model
+        padding: 50px;
+        display: flex;
+    }
+
     &::before {
         content: '';
 
@@ -53,6 +59,12 @@
     // box model
     width: 100%;
     height: 100%;
+
+    @include atDesktopS {
+        // box model
+        padding-top: 60px;
+        flex-basis: 50%;
+    }
 }
 
 .about__image img {
@@ -71,6 +83,11 @@
     @include atTablet {
         // box model
         padding: 50px;
+    }
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 50%;
     }
 }
 
@@ -96,16 +113,22 @@
     font-family: $displayFont;
     font-size: 1.5rem;
     line-height: 1.5;
+
+    @include atDesktopS {
+        // typography
+        font-size: 1.25rem;
+    }
 }
 
-.about__text {
-
-}
-
-p {
+.about__text p {
     // typography
     color: $light;
     font-family: $textFont;
     font-size: 1rem;
     line-height: 1.75;
+
+    @include atDesktopS {
+        // typography
+        font-size: 0.85rem;
+    }
 }
