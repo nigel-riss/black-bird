@@ -57,6 +57,11 @@
         margin: 1% 0;
         margin-bottom: 60px;
     }
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 31%;
+    }
 }
 
 .member__photo {
@@ -113,5 +118,12 @@
 
     // typography
     color: $black;
+    font-family: $textFont;
     font-size: 0.85rem;
+    line-height: 1.5;
+
+    @include atDesktopS {
+        // typography
+        font-size: 0.75rem;
+    }
 }

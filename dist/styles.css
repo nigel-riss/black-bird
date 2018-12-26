@@ -1047,6 +1047,9 @@ html, body {
       flex-basis: 47%;
       margin: 1% 0;
       margin-bottom: 60px; } }
+  @media (min-width: 1000px) {
+    .member {
+      flex-basis: 31%; } }
 
 .member__photo {
   position: relative;
@@ -1081,7 +1084,12 @@ html, body {
   margin-bottom: 20px;
   padding: 0 30px;
   color: #000000;
-  font-size: 0.85rem; }
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5; }
+  @media (min-width: 1000px) {
+    .member__about {
+      font-size: 0.75rem; } }
 
 .app-promo {
   position: relative;
