@@ -5,6 +5,8 @@
     // box model
     padding: 20px;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
 
     // visual
     background-color: $light;
@@ -95,6 +97,12 @@
 }
 
 .member__header {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+
     // typography
     text-align: center;
 }

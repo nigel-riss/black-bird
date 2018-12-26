@@ -1015,6 +1015,8 @@ html, body {
   position: relative;
   padding: 20px;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff; }
   .member::before {
     content: '';
@@ -1070,6 +1072,10 @@ html, body {
   object-fit: cover; }
 
 .member__header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
   text-align: center; }
 
 .member__name {
