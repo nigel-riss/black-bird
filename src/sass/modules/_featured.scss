@@ -5,6 +5,12 @@
 
     // visual
     background-color: $gamboge;
+
+    @include atDesktopL {
+        // box model
+        padding: 70px;
+        padding-bottom: 20px;
+    }
 }
 
 .featured__header {
@@ -18,6 +24,6 @@
         // box model
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
     }
 }

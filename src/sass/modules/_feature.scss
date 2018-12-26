@@ -31,6 +31,18 @@
         background-image: none;
     }
 
+    @include atDesktopM {
+        // box model
+        max-width: 320px;
+        margin: 0 25px;
+    }
+
+    @include atDesktopL {
+        // box model
+        max-width: 360px;
+        margin: 0 40px;
+    }
+
     &:last-of-type {
         // visual
         background-image: none;
@@ -56,6 +68,16 @@
     @include atDesktopS {
         // typography
         font-size: 1rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.125rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 1.25rem;
     }
 }
 
@@ -84,5 +106,15 @@
 
         // typography
         font-size: 0.85rem;
+    }
+
+    @include atDesktopM {
+        // box model
+        font-size: 0.9rem;
+    }
+
+    @include atDesktopL {
+        // box model
+        font-size: 1.025rem;
     }
 }
