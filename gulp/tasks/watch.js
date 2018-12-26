@@ -1,6 +1,12 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import { join } from 'path';
+
+const dirs = {
+    pug: './src/pug/**/*.pug',
+    sass: './src/sass/**/*.scss',
+    js: './src/js/**/*.js',
+    dist: './dist'
+}
 
 gulp.task('watch', () => {
     browserSync.init({
@@ -18,13 +24,13 @@ gulp.task('watch', () => {
     });
 
     // pug
-    gulp.watch('./src/pug/**/*.pug', ['pugChanged']);
+    gulp.watch(dirs.pug, ['pugChanged']);
 
     // styles
-    gulp.watch('./src/sass/**/*.scss', ['cssInject']);
+    gulp.watch(dirs.sass, ['cssInject']);
 
     // scripts
-    gulp.watch('./src/js/**/*.js', ['jsChanged']);
+    gulp.watch(dirs.js, ['jsChanged']);
 });
 
 // pug
@@ -39,7 +45,9 @@ gulp.task('cssInject', ['styles'], () => {
 });
 
 // scripts
-gulp.task('jsChanged', ['scripts'], () => {
+gulp.task('jsChanged', () => {
+    gulp.src(dirs.js)
+        .pipe(gulp.dest(dirs.dist));
     browserSync.reload();
 });
 

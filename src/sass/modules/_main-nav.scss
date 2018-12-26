@@ -1,0 +1,44 @@
+.main-nav {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    // box model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // visual
+    background-color: rgba($dark, 0.95);
+}
+
+.main-nav__list {
+    // box model
+    margin: 0;
+    padding: 0;
+
+    // list
+    list-style: none;
+}
+
+.main-nav__item {
+    // box model
+    margin: 5px 0;
+    padding: 0;
+}
+
+.main-nav__link {
+    // box model
+    display: block;
+    padding: 10px;
+
+    // typography
+    color: $light;
+    font-family: $displayFont;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}

@@ -1,0 +1,96 @@
+.menu-button {
+    // positioning
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 888;
+
+    // box model
+    height: 45px;
+    width: 45px;
+
+    // visual
+    background-color: $gamboge;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+
+    @include atTablet {
+        // positioning
+        right: 33px;
+        top: 45px;
+    }
+
+    @include atDesktopS {
+        // box model
+        display: none;
+    }
+}
+
+.menu-button::before,
+.menu-button__middle,
+.menu-button::after {
+    // positioning
+    position: absolute;
+    left: 11px;
+
+    // box model
+    height: 3px;
+    width: 22px;
+
+    // visual
+    background-color: $light;
+    transition: all 0.25s ease-out;
+    transform-origin: center left;
+}
+
+.menu-button::before {
+    content: '';
+
+    // positioning
+    top: 14px;
+}
+
+.menu-button__middle {
+    // positioning
+    top: 21px;
+}
+
+.menu-button::after {
+    content: '';
+
+    // positioning
+    top: 28px;
+}
+
+.menu-button--close .menu-button__middle {
+    // box model
+    width: 0;
+
+    // visual
+    opacity: 0;
+}
+
+.menu-button--close {
+    &::before {
+        // positioning
+        left: 14px;
+        top: 13px;
+        transform-origin: left center;
+        transform: rotate(45deg);
+
+        // box model
+        width: 23px;
+    }
+
+    &::after {
+        // positioning
+        left: 14px;
+        top: 29px;
+        transform-origin: left center;
+        transform: rotate(-45deg);
+
+        // box model
+        width: 23px;
+    }
+}

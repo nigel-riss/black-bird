@@ -365,10 +365,20 @@ html, body {
       background-size: 80px, cover, contain; } }
 
 .hero__nav {
-  display: none; }
+  position: fixed;
+  bottom: -5%;
+  top: -5%;
+  right: 0;
+  z-index: 777;
+  width: 100%;
+  max-width: 425px;
+  transition: all 0.25s ease-out; }
   @media (min-width: 1000px) {
     .hero__nav {
       display: block; } }
+
+.hero__nav--hidden {
+  right: -110%; }
 
 .hero__content {
   max-width: 305px; }
@@ -516,6 +526,94 @@ html, body {
   font-style: normal;
   letter-spacing: 0.35em;
   text-transform: uppercase; }
+
+.main-nav {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(19, 19, 19, 0.95); }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-nav__item {
+  margin: 5px 0;
+  padding: 0; }
+
+.main-nav__link {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Marta", Times, serif;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none; }
+
+.menu-button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 888;
+  height: 45px;
+  width: 45px;
+  background-color: #e49b0e;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s ease-out; }
+  @media (min-width: 700px) {
+    .menu-button {
+      right: 33px;
+      top: 45px; } }
+  @media (min-width: 1000px) {
+    .menu-button {
+      display: none; } }
+
+.menu-button::before,
+.menu-button__middle,
+.menu-button::after {
+  position: absolute;
+  left: 11px;
+  height: 3px;
+  width: 22px;
+  background-color: #ffffff;
+  transition: all 0.25s ease-out;
+  transform-origin: center left; }
+
+.menu-button::before {
+  content: '';
+  top: 14px; }
+
+.menu-button__middle {
+  top: 21px; }
+
+.menu-button::after {
+  content: '';
+  top: 28px; }
+
+.menu-button--close .menu-button__middle {
+  width: 0;
+  opacity: 0; }
+
+.menu-button--close::before {
+  left: 14px;
+  top: 13px;
+  transform-origin: left center;
+  transform: rotate(45deg);
+  width: 23px; }
+
+.menu-button--close::after {
+  left: 14px;
+  top: 29px;
+  transform-origin: left center;
+  transform: rotate(-45deg);
+  width: 23px; }
 
 .featured {
   padding: 50px;
