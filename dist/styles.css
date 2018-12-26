@@ -517,6 +517,9 @@ html, body {
     .contacts__phone {
       font-size: 1rem; } }
 
+.contacts__phone:hover {
+  color: #ffffff; }
+
 .logo__image {
   margin: 0 auto;
   margin-bottom: 10px;
@@ -603,6 +606,10 @@ html, body {
     .main-nav__link {
       color: #e49b0e;
       font-size: 1rem; } }
+
+@media (min-width: 1000px) {
+  .main-nav__link:hover {
+    color: #ffffff; } }
 
 .menu-button {
   position: fixed;
@@ -1330,6 +1337,9 @@ html, body {
       font-size: 1rem;
       background-position: bottom 22px center; } }
 
+.ctcs__phone:hover {
+  color: #808080; }
+
 .ctcs__time {
   margin: 0;
   color: #131313;
@@ -1437,6 +1447,9 @@ html, body {
   text-decoration: none;
   text-transform: uppercase; }
 
+.footer__policy:hover {
+  color: #e49b0e; }
+
 .footer-nav__list {
   margin: 0;
   padding: 0;
@@ -1454,6 +1467,9 @@ html, body {
   font-family: "Marta", Times, serif;
   font-weight: 700px;
   text-decoration: none; }
+
+.footer-nav__link:hover {
+  color: #ffffff; }
 
 body {
   color: #ffffff;

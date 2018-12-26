@@ -64,3 +64,10 @@
         font-size: 1rem;
     }
 }
+
+.main-nav__link:hover {
+    @include atDesktopS {
+        // typography
+        color: $light;
+    }
+}

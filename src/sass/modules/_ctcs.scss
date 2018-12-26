@@ -96,6 +96,11 @@
     }
 }
 
+.ctcs__phone:hover {
+    // typography
+    color: $grey;
+}
+
 .ctcs__time {
     // box model
     margin: 0;
@@ -118,7 +123,7 @@
     // positioning
     position: relative;
     z-index: 2;
-    
+
     // box model
     margin: 10px auto;
     width: 200px;
