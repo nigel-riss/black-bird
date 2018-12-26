@@ -13,11 +13,21 @@
         // box model
         padding: 60px 50px;
     }
+
+    @include atDesktopS {
+        // box model
+        padding-top: 80px;
+    }
 }
 
 .price-list__header {
     // box model
     margin-bottom: 35px;
+
+    @include atDesktopS {
+        // box model
+        margin-bottom: 60px;
+    }
 }
 
 .price-list__title {
@@ -31,6 +41,15 @@
     letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
+}
+
+.price-list__content {
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
 }
 
 .price-list__cta {

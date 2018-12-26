@@ -2,6 +2,11 @@
     // box model
     margin-bottom: 40px;
     width: 100%;
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 45%;
+    }
 }
 
 .price-table__caption {
