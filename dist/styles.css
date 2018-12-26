@@ -1214,8 +1214,27 @@ html, body {
   text-transform: uppercase; }
 
 .partners__content {
-  display: flex;
-  justify-content: space-between; }
+  text-align: center; }
+
+.partner {
+  display: inline-block;
+  vertical-align: middle;
+  height: 80px;
+  margin: 20px;
+  opacity: 0.35; }
+  @media (min-width: 700px) {
+    .partner {
+      height: 100px; } }
+  @media (min-width: 1000px) {
+    .partner {
+      height: 120px;
+      margin: 30px; } }
+  @media (min-width: 1200px) {
+    .partner {
+      height: 140px;
+      margin: 15px 30px; } }
+  .partner img {
+    height: 100%; }
 
 .map {
   position: relative;
