@@ -7,13 +7,15 @@ html {
 body {
     // box model
     box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow-x: hidden;
 }
 
 html, body {
     // box model
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
 }
 
 *,
