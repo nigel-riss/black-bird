@@ -1304,6 +1304,13 @@ html, body {
       background-image: url("./img/deco/app-bg.jpg");
       background-size: cover;
       background-position: center right; } }
+  @media (min-width: 1200px) {
+    .app-promo {
+      min-height: 600px; } }
+  @media (min-width: 1500px) {
+    .app-promo {
+      min-height: 640px;
+      padding-left: calc((100% - 1380px) / 2); } }
   .app-promo::before {
     content: '';
     position: absolute;
@@ -1345,6 +1352,14 @@ html, body {
     .app-promo__image {
       left: 50px;
       height: 400px; } }
+  @media (min-width: 1200px) {
+    .app-promo__image {
+      left: 60px;
+      height: 500px; } }
+  @media (min-width: 1500px) {
+    .app-promo__image {
+      left: calc((100% - 1380px) / 2);
+      height: 600px; } }
 
 .app-promo__image img {
   height: 100%; }
@@ -1364,6 +1379,15 @@ html, body {
       padding-left: 210px;
       padding-bottom: 30px;
       width: 450px; } }
+  @media (min-width: 1200px) {
+    .app-promo__cta {
+      width: 560px;
+      padding-bottom: 40px;
+      padding-left: 270px;
+      font-size: 1.75rem; } }
+  @media (min-width: 1500px) {
+    .app-promo__cta {
+      font-size: 2rem; } }
 
 .app-promo__buttons {
   padding: 10px 25px;
@@ -1376,6 +1400,9 @@ html, body {
       padding-left: 210px;
       padding-bottom: 20px;
       background-color: transparent; } }
+  @media (min-width: 1200px) {
+    .app-promo__buttons {
+      padding-left: 270px; } }
 
 .app-button {
   display: block;
@@ -1389,6 +1416,10 @@ html, body {
     background-image: url("./img/app-store.svg"); }
   .app-button--gplay {
     background-image: url("./img/google-play.svg"); }
+  @media (min-width: 1200px) {
+    .app-button {
+      width: 220px;
+      height: 80px; } }
 
 .partners {
   padding: 40px 25px;
@@ -1406,8 +1437,13 @@ html, body {
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 1200px) {
+    .partners__title {
+      font-size: 2rem; } }
 
 .partners__content {
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center; }
 
 .partner {
@@ -1433,6 +1469,12 @@ html, body {
 .map {
   position: relative;
   height: 400px; }
+  @media (min-width: 1200px) {
+    .map {
+      height: 500px; } }
+  @media (min-width: 1500px) {
+    .map {
+      height: 600px; } }
   .map::before {
     content: '';
     position: absolute;

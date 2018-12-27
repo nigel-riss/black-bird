@@ -20,6 +20,17 @@
         background-size: cover;
         background-position: center right;
     }
+
+    @include atDesktopM {
+        // box model
+        min-height: 600px;
+    }
+
+    @include atDesktopL {
+        // box model
+        min-height: 640px;
+        padding-left: calc((100% - 1380px) / 2);
+    }
     
     &::before {
         content: '';
@@ -89,6 +100,22 @@
         // box model
         height: 400px;
     }
+
+    @include atDesktopM {
+        // positioning
+        left: 60px;
+
+        // box model
+        height: 500px;
+    }
+
+    @include atDesktopL {
+        // positioning
+        left: calc((100% - 1380px) / 2);
+
+        // box model
+        height: 600px;
+    }
 }
 
 .app-promo__image img {
@@ -97,7 +124,7 @@
 }
 
 .app-promo__content {
-
+    
 }
 
 .app-promo__cta {
@@ -120,6 +147,21 @@
         padding-bottom: 30px;
         width: 450px;
     }
+
+    @include atDesktopM {
+        // box model
+        width: 560px;
+        padding-bottom: 40px;
+        padding-left: 270px;
+
+        // typography
+        font-size: 1.75rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 2rem;
+    }
 }
 
 .app-promo__buttons {
@@ -139,5 +181,10 @@
 
         // visual
         background-color: transparent;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding-left: 270px;
     }
 }

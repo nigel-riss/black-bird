@@ -23,9 +23,18 @@
     letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
+
+    @include atDesktopM {
+        // typography
+        font-size: 2rem;
+    }
 }
 
 .partners__content {
+    // box model
+    max-width: 1000px;
+    margin: 0 auto;
+
     // typography
     text-align: center;
 }

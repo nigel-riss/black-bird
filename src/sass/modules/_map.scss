@@ -5,6 +5,16 @@
     // box model
     height: 400px;
 
+    @include atDesktopM {
+        // box model
+        height: 500px;
+    }
+
+    @include atDesktopL {
+        // box model
+        height: 600px;
+    }
+
     &::before {
         content: '';
 
