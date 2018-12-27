@@ -19,6 +19,13 @@
         // box model
         flex-basis: 30%;
     }
+
+    @include atDesktopM {
+        // box model
+        flex-basis: 33%;
+        max-width: inherit;
+        margin-bottom: 50px;
+    }
 }
 
 .benefit__icon {
@@ -30,6 +37,12 @@
     // box model
     height: 120px;
     width: 120px;
+
+    @include atDesktopM {
+        // box model
+        height: 140px;
+        width: 140px;
+    }
 }
 
 .benefit__text {
@@ -42,4 +55,19 @@
     font-size: 0.9rem;
     font-family: $displayFont;
     font-weight: 700;
+    line-height: 1.5;
+
+    @include atTablet {
+        // typography
+        font-size: 1rem;
+    }
+
+    @include atDesktopM {
+        // box model
+        max-width: 300px;
+        margin: 0 auto;
+
+        // typography
+        font-size: 1.125rem;
+    }
 }

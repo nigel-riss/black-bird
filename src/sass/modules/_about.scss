@@ -11,6 +11,11 @@
         display: flex;
     }
 
+    @include atDesktopL {
+        // box model
+        padding: 60px calc((100% - 1400px) / 2);
+    }
+
     &::before {
         content: '';
 
@@ -118,6 +123,11 @@
         // typography
         font-size: 1.25rem;
     }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.5rem;
+    }
 }
 
 .about__text p {
@@ -130,5 +140,10 @@
     @include atDesktopS {
         // typography
         font-size: 0.85rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1rem;
     }
 }

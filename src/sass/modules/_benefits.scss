@@ -20,6 +20,11 @@
         background-repeat: no-repeat, repeat-x;
         background-size: 120px, 100px;
     }
+    
+    @include atDesktopM {
+        // visual
+        background-size: 140px, 100px;
+    }
 }
 
 .benefits__header {
@@ -42,8 +47,17 @@
 
     @include atDesktopS {
         // box model
+        padding: 30px 80px;
+        padding-right: 200px;
         width: 540px;
         margin-left: auto;
+    }
+
+    @include atDesktopM {
+        // box model
+        width: 50%;
+        padding: 30px 80px;
+        padding-right: calc((100vw - 1000px) / 2);
     }
 }
 
@@ -68,6 +82,16 @@
         // typography
         font-size: 1.25rem;
     }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.75rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 2rem;
+    }
 }
 
 .benefits__subtitle {
@@ -90,6 +114,16 @@
         // typography
         font-size: 1.5rem;
     }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.75rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 2rem;
+    }
 }
 
 .benefits__content {
@@ -100,5 +134,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    @include atDesktopL {
+        // box model
+        padding: 50px calc((100% - 1300px) / 2);
     }
 }
