@@ -1080,6 +1080,9 @@ html, body {
   @media (min-width: 1000px) {
     .price-list {
       padding-top: 80px; } }
+  @media (min-width: 1500px) {
+    .price-list {
+      padding: 60px calc((100% - 1400px) / 2); } }
 
 .price-list__header {
   margin-bottom: 35px; }
@@ -1095,6 +1098,9 @@ html, body {
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 1200px) {
+    .price-list__title {
+      font-size: 2rem; } }
 
 @media (min-width: 1000px) {
   .price-list__content {
@@ -1121,26 +1127,46 @@ html, body {
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 1200px) {
+    .price-table__caption {
+      font-size: 1.5rem;
+      margin-bottom: 40px; } }
 
 .price-table__service {
   vertical-align: top;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   padding-right: 10px;
   color: #ffffff;
   line-height: 1.5;
   font-size: 1rem;
-  font-family: "Marta", Times, serif; }
+  font-family: "Marta", Times, serif;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.125); }
+  @media (min-width: 1200px) {
+    .price-table__service {
+      padding-top: 20px;
+      font-size: 1.125rem; } }
+  @media (min-width: 1500px) {
+    .price-table__service {
+      font-size: 1.25rem; } }
 
 .price-table__service em {
   display: block;
   color: rgba(228, 155, 14, 0.75);
-  font-size: 0.85rem; }
+  font-size: 0.85em; }
 
 .price-table__price {
-  vertical-align: top;
+  vertical-align: middle;
   color: #ffffff;
   font-family: "Marta", Times, serif;
-  text-align: right; }
+  text-align: right;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.125); }
+  @media (min-width: 1200px) {
+    .price-table__price {
+      font-size: 1.25rem; } }
+  @media (min-width: 1500px) {
+    .price-table__price {
+      font-size: 1.35rem; } }
 
 .price-table__description {
   column-span: 2; }
@@ -1160,6 +1186,9 @@ html, body {
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 1200px) {
+    .team__title {
+      font-size: 2rem; } }
 
 @media (min-width: 700px) {
   .team__content {
@@ -1208,6 +1237,9 @@ html, body {
   @media (min-width: 1000px) {
     .member {
       flex-basis: 31%; } }
+  @media (min-width: 1200px) {
+    .member {
+      max-width: 360px; } }
 
 .member__photo {
   position: relative;
@@ -1241,6 +1273,9 @@ html, body {
   font-family: "Marta", Times, serif;
   font-size: 1.5rem;
   font-weight: 700; }
+  @media (min-width: 1200px) {
+    .member__name {
+      font-size: 1.75rem; } }
 
 .member__about {
   margin-bottom: 20px;
@@ -1252,6 +1287,9 @@ html, body {
   @media (min-width: 1000px) {
     .member__about {
       font-size: 0.75rem; } }
+  @media (min-width: 1200px) {
+    .member__about {
+      font-size: 1rem; } }
 
 .app-promo {
   position: relative;

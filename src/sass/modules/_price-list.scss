@@ -18,6 +18,11 @@
         // box model
         padding-top: 80px;
     }
+
+    @include atDesktopL {
+        // box model
+        padding: 60px calc((100% - 1400px) / 2);
+    }
 }
 
 .price-list__header {
@@ -41,6 +46,11 @@
     letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
+
+    @include atDesktopM {
+        // typography
+        font-size: 2rem;
+    }
 }
 
 .price-list__content {

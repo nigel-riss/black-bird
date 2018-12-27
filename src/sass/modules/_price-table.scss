@@ -21,16 +21,23 @@
     letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
 }
 
 .price-table__row {
-    // box model
+
 }
 
 .price-table__service {
     // box model
     vertical-align: top;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     padding-right: 10px;
 
     // typography
@@ -38,6 +45,22 @@
     line-height: 1.5;
     font-size: 1rem;
     font-family: $displayFont;
+
+    // visual
+    border-bottom: 1px dotted rgba($light, 0.125);
+    
+    @include atDesktopM {
+        // box model
+        padding-top: 20px;
+
+        // typography
+        font-size: 1.125rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 1.25rem;
+    }
 }
 
 .price-table__service em {
@@ -46,17 +69,30 @@
 
     // typography
     color: rgba($gamboge, 0.75);
-    font-size: 0.85rem;
+    font-size: 0.85em;
 }
 
 .price-table__price {
     // box model
-    vertical-align: top;
+    vertical-align: middle;
 
     // typography
     color: $light;
     font-family: $displayFont;
     text-align: right;
+
+    // visual
+    border-bottom: 1px dotted rgba($light, 0.125);
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.25rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 1.35rem;
+    }
 }
 
 .price-table__description {

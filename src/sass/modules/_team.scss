@@ -26,6 +26,11 @@
     letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
+
+    @include atDesktopM {
+        // typography
+        font-size: 2rem;
+    }
 }
 
 .team__content {

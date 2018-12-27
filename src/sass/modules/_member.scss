@@ -64,6 +64,11 @@
         // box model
         flex-basis: 31%;
     }
+
+    @include atDesktopM {
+        // box model
+        max-width: 360px;
+    }
 }
 
 .member__photo {
@@ -117,6 +122,11 @@
     font-family: $displayFont;
     font-size: 1.5rem;
     font-weight: 700;
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.75rem;
+    }
 }
 
 .member__about {
@@ -133,5 +143,10 @@
     @include atDesktopS {
         // typography
         font-size: 0.75rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 1rem;
     }
 }
